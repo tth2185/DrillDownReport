@@ -1,0 +1,2388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Out of State Value Report for Institutions in Massachusetts       </td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c header" scope="col">School Name</th>
+<th class="c header" scope="col">Institution Type</th>
+<th class="c header" scope="col">Total Students</th>
+<th class="c header" scope="col">Ten Year Median Salary</th>
+<th class="c header" scope="col">Out of State Tuition (4 years)</th>
+<th class="c header" scope="col">Out of State Value</th>
+<th class="c header" scope="col">Ranking Within State</th>
+<th class="c header" scope="col">National Ranking</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data">Boston Baptist College</td>
+<td class="l data">Private</td>
+<td class="r data">       80</td>
+<td class="r data">     $75,475</td>
+<td class="r data">     $50,400</td>
+<td class="r data">      1.5</td>
+<td class="r data">        1</td>
+<td class="r data">      129</td>
+</tr>
+<tr>
+<td class="l data">Westfield State University</td>
+<td class="l data">Public</td>
+<td class="r data">     6487</td>
+<td class="r data">     $73,971</td>
+<td class="r data">     $63,180</td>
+<td class="r data">     1.17</td>
+<td class="r data">        2</td>
+<td class="r data">      232</td>
+</tr>
+<tr>
+<td class="l data">Fitchburg State University</td>
+<td class="l data">Public</td>
+<td class="r data">     4765</td>
+<td class="r data">     $75,726</td>
+<td class="r data">     $64,940</td>
+<td class="r data">     1.17</td>
+<td class="r data">        3</td>
+<td class="r data">      235</td>
+</tr>
+<tr>
+<td class="l data">Worcester State University</td>
+<td class="l data">Public</td>
+<td class="r data">     6597</td>
+<td class="r data">     $72,039</td>
+<td class="r data">     $62,448</td>
+<td class="r data">     1.15</td>
+<td class="r data">        4</td>
+<td class="r data">      243</td>
+</tr>
+<tr>
+<td class="l data">Framingham State University</td>
+<td class="l data">Public</td>
+<td class="r data">     5126</td>
+<td class="r data">     $72,755</td>
+<td class="r data">     $64,000</td>
+<td class="r data">     1.14</td>
+<td class="r data">        5</td>
+<td class="r data">      254</td>
+</tr>
+<tr>
+<td class="l data">Bridgewater State University</td>
+<td class="l data">Public</td>
+<td class="r data">    10787</td>
+<td class="r data">     $71,838</td>
+<td class="r data">     $64,608</td>
+<td class="r data">     1.11</td>
+<td class="r data">        6</td>
+<td class="r data">      271</td>
+</tr>
+<tr>
+<td class="l data">Salem State University</td>
+<td class="l data">Public</td>
+<td class="r data">     8853</td>
+<td class="r data">     $70,853</td>
+<td class="r data">     $66,824</td>
+<td class="r data">     1.06</td>
+<td class="r data">        7</td>
+<td class="r data">      325</td>
+</tr>
+<tr>
+<td class="l data">Massachusetts Maritime Academy</td>
+<td class="l data">Public</td>
+<td class="r data">     1811</td>
+<td class="r data">     $95,820</td>
+<td class="r data">    $103,296</td>
+<td class="r data">     0.93</td>
+<td class="r data">        8</td>
+<td class="r data">      499</td>
+</tr>
+<tr>
+<td class="l data">Massachusetts College of Liberal Arts</td>
+<td class="l data">Public</td>
+<td class="r data">     1822</td>
+<td class="r data">     $69,603</td>
+<td class="r data">     $76,320</td>
+<td class="r data">     0.91</td>
+<td class="r data">        9</td>
+<td class="r data">      516</td>
+</tr>
+<tr>
+<td class="l data">Hellenic College-Holy Cross Greek Orthodox School of Theology</td>
+<td class="l data">Private</td>
+<td class="r data">      105</td>
+<td class="r data">     $78,102</td>
+<td class="r data">     $89,960</td>
+<td class="r data">     0.87</td>
+<td class="r data">       10</td>
+<td class="r data">      583</td>
+</tr>
+<tr>
+<td class="l data">Bay State College</td>
+<td class="l data">Private</td>
+<td class="r data">     1143</td>
+<td class="r data">     $65,546</td>
+<td class="r data">     $89,280</td>
+<td class="r data">     0.73</td>
+<td class="r data">       11</td>
+<td class="r data">      786</td>
+</tr>
+<tr>
+<td class="l data">Wentworth Institute of Technology *</td>
+<td class="l data">Private</td>
+<td class="r data">     4543</td>
+<td class="r data">     $96,700</td>
+<td class="r data">    $139,908</td>
+<td class="r data">     0.69</td>
+<td class="r data">       12</td>
+<td class="r data">      870</td>
+</tr>
+<tr>
+<td class="l data">University of Massachusetts-Dartmouth *</td>
+<td class="l data">Public</td>
+<td class="r data">     8029</td>
+<td class="r data">     $77,700</td>
+<td class="r data">    $113,140</td>
+<td class="r data">     0.69</td>
+<td class="r data">       13</td>
+<td class="r data">      884</td>
+</tr>
+<tr>
+<td class="l data">University of Massachusetts-Lowell *</td>
+<td class="l data">Public</td>
+<td class="r data">    16407</td>
+<td class="r data">     $86,600</td>
+<td class="r data">    $127,460</td>
+<td class="r data">     0.68</td>
+<td class="r data">       14</td>
+<td class="r data">      898</td>
+</tr>
+<tr>
+<td class="l data">University of Massachusetts-Amherst *</td>
+<td class="l data">Public</td>
+<td class="r data">    26735</td>
+<td class="r data">     $88,200</td>
+<td class="r data">    $133,908</td>
+<td class="r data">     0.66</td>
+<td class="r data">       15</td>
+<td class="r data">      947</td>
+</tr>
+<tr>
+<td class="l data">Harvard University *</td>
+<td class="l data">Private</td>
+<td class="r data">    13844</td>
+<td class="r data">    $124,000</td>
+<td class="r data">    $195,796</td>
+<td class="r data">     0.63</td>
+<td class="r data">       16</td>
+<td class="r data">     1008</td>
+</tr>
+<tr>
+<td class="l data">Massachusetts Institute of Technology *</td>
+<td class="l data">Private</td>
+<td class="r data">     4680</td>
+<td class="r data">    $126,000</td>
+<td class="r data">    $199,568</td>
+<td class="r data">     0.63</td>
+<td class="r data">       17</td>
+<td class="r data">     1013</td>
+</tr>
+<tr>
+<td class="l data">Nichols College</td>
+<td class="l data">Private</td>
+<td class="r data">     1391</td>
+<td class="r data">     $85,758</td>
+<td class="r data">    $136,000</td>
+<td class="r data">     0.63</td>
+<td class="r data">       18</td>
+<td class="r data">     1017</td>
+</tr>
+<tr>
+<td class="l data">Pine Manor College</td>
+<td class="l data">Private</td>
+<td class="r data">      508</td>
+<td class="r data">     $77,157</td>
+<td class="r data">    $122,640</td>
+<td class="r data">     0.63</td>
+<td class="r data">       19</td>
+<td class="r data">     1026</td>
+</tr>
+<tr>
+<td class="l data">Eastern Nazarene College</td>
+<td class="l data">Private</td>
+<td class="r data">      845</td>
+<td class="r data">     $78,548</td>
+<td class="r data">    $127,120</td>
+<td class="r data">     0.62</td>
+<td class="r data">       20</td>
+<td class="r data">     1052</td>
+</tr>
+<tr>
+<td class="l data">Western New England University</td>
+<td class="l data">Private</td>
+<td class="r data">     2785</td>
+<td class="r data">     $86,594</td>
+<td class="r data">    $142,960</td>
+<td class="r data">     0.61</td>
+<td class="r data">       21</td>
+<td class="r data">     1088</td>
+</tr>
+<tr>
+<td class="l data">Lesley University</td>
+<td class="l data">Private</td>
+<td class="r data">     2594</td>
+<td class="r data">     $63,561</td>
+<td class="r data">    $106,700</td>
+<td class="r data">      0.6</td>
+<td class="r data">       22</td>
+<td class="r data">     1126</td>
+</tr>
+<tr>
+<td class="l data">University of Massachusetts-Boston *</td>
+<td class="l data">Public</td>
+<td class="r data">    15848</td>
+<td class="r data">     $78,200</td>
+<td class="r data">    $131,940</td>
+<td class="r data">     0.59</td>
+<td class="r data">       23</td>
+<td class="r data">     1136</td>
+</tr>
+<tr>
+<td class="l data">Worcester Polytechnic Institute *</td>
+<td class="l data">Private</td>
+<td class="r data">     4654</td>
+<td class="r data">    $114,000</td>
+<td class="r data">    $194,512</td>
+<td class="r data">     0.59</td>
+<td class="r data">       24</td>
+<td class="r data">     1155</td>
+</tr>
+<tr>
+<td class="l data">Newbury College</td>
+<td class="l data">Private</td>
+<td class="r data">      815</td>
+<td class="r data">     $79,980</td>
+<td class="r data">    $137,880</td>
+<td class="r data">     0.58</td>
+<td class="r data">       25</td>
+<td class="r data">     1172</td>
+</tr>
+<tr>
+<td class="l data">American International College</td>
+<td class="l data">Private</td>
+<td class="r data">     1473</td>
+<td class="r data">     $78,038</td>
+<td class="r data">    $137,880</td>
+<td class="r data">     0.57</td>
+<td class="r data">       26</td>
+<td class="r data">     1210</td>
+</tr>
+<tr>
+<td class="l data">Springfield College</td>
+<td class="l data">Private</td>
+<td class="r data">     2158</td>
+<td class="r data">     $82,266</td>
+<td class="r data">    $146,140</td>
+<td class="r data">     0.56</td>
+<td class="r data">       27</td>
+<td class="r data">     1221</td>
+</tr>
+<tr>
+<td class="l data">Endicott College</td>
+<td class="l data">Private</td>
+<td class="r data">     3496</td>
+<td class="r data">     $70,634</td>
+<td class="r data">    $128,616</td>
+<td class="r data">     0.55</td>
+<td class="r data">       28</td>
+<td class="r data">     1267</td>
+</tr>
+<tr>
+<td class="l data">MCPHS University</td>
+<td class="l data">Private</td>
+<td class="r data">     4129</td>
+<td class="r data">     $69,535</td>
+<td class="r data">    $130,360</td>
+<td class="r data">     0.53</td>
+<td class="r data">       29</td>
+<td class="r data">     1319</td>
+</tr>
+<tr>
+<td class="l data">Lasell College</td>
+<td class="l data">Private</td>
+<td class="r data">     1859</td>
+<td class="r data">     $73,713</td>
+<td class="r data">    $138,400</td>
+<td class="r data">     0.53</td>
+<td class="r data">       30</td>
+<td class="r data">     1323</td>
+</tr>
+<tr>
+<td class="l data">Assumption College</td>
+<td class="l data">Private</td>
+<td class="r data">     2318</td>
+<td class="r data">     $76,773</td>
+<td class="r data">    $145,040</td>
+<td class="r data">     0.53</td>
+<td class="r data">       31</td>
+<td class="r data">     1331</td>
+</tr>
+<tr>
+<td class="l data">College of the Holy Cross *</td>
+<td class="l data">Private</td>
+<td class="r data">     2806</td>
+<td class="r data">    $106,000</td>
+<td class="r data">    $202,520</td>
+<td class="r data">     0.52</td>
+<td class="r data">       32</td>
+<td class="r data">     1348</td>
+</tr>
+<tr>
+<td class="l data">Dean College</td>
+<td class="l data">Private</td>
+<td class="r data">     1568</td>
+<td class="r data">     $78,852</td>
+<td class="r data">    $152,360</td>
+<td class="r data">     0.52</td>
+<td class="r data">       33</td>
+<td class="r data">     1375</td>
+</tr>
+<tr>
+<td class="l data">Fisher College</td>
+<td class="l data">Private</td>
+<td class="r data">     3263</td>
+<td class="r data">     $62,856</td>
+<td class="r data">    $121,996</td>
+<td class="r data">     0.52</td>
+<td class="r data">       34</td>
+<td class="r data">     1386</td>
+</tr>
+<tr>
+<td class="l data">Massachusetts College of Art and Design</td>
+<td class="l data">Public</td>
+<td class="r data">     2192</td>
+<td class="r data">     $70,194</td>
+<td class="r data">    $137,600</td>
+<td class="r data">     0.51</td>
+<td class="r data">       35</td>
+<td class="r data">     1399</td>
+</tr>
+<tr>
+<td class="l data">Gordon College</td>
+<td class="l data">Private</td>
+<td class="r data">     1784</td>
+<td class="r data">     $74,821</td>
+<td class="r data">    $146,960</td>
+<td class="r data">     0.51</td>
+<td class="r data">       36</td>
+<td class="r data">     1405</td>
+</tr>
+<tr>
+<td class="l data">Tufts University</td>
+<td class="l data">Private</td>
+<td class="r data">     5960</td>
+<td class="r data">    $110,094</td>
+<td class="r data">    $217,272</td>
+<td class="r data">     0.51</td>
+<td class="r data">       37</td>
+<td class="r data">     1409</td>
+</tr>
+<tr>
+<td class="l data">Clark University</td>
+<td class="l data">Private</td>
+<td class="r data">     2476</td>
+<td class="r data">     $89,143</td>
+<td class="r data">    $177,600</td>
+<td class="r data">      0.5</td>
+<td class="r data">       38</td>
+<td class="r data">     1429</td>
+</tr>
+<tr>
+<td class="l data">Mount Ida College</td>
+<td class="l data">Private</td>
+<td class="r data">     1456</td>
+<td class="r data">     $71,588</td>
+<td class="r data">    $142,880</td>
+<td class="r data">      0.5</td>
+<td class="r data">       39</td>
+<td class="r data">     1430</td>
+</tr>
+<tr>
+<td class="l data">Babson College</td>
+<td class="l data">Private</td>
+<td class="r data">     2354</td>
+<td class="r data">     $99,025</td>
+<td class="r data">    $198,656</td>
+<td class="r data">      0.5</td>
+<td class="r data">       40</td>
+<td class="r data">     1441</td>
+</tr>
+<tr>
+<td class="l data">Anna Maria College</td>
+<td class="l data">Private</td>
+<td class="r data">     1221</td>
+<td class="r data">     $73,967</td>
+<td class="r data">    $148,520</td>
+<td class="r data">      0.5</td>
+<td class="r data">       41</td>
+<td class="r data">     1442</td>
+</tr>
+<tr>
+<td class="l data">Suffolk University *</td>
+<td class="l data">Private</td>
+<td class="r data">     5692</td>
+<td class="r data">     $74,000</td>
+<td class="r data">    $149,080</td>
+<td class="r data">      0.5</td>
+<td class="r data">       42</td>
+<td class="r data">     1449</td>
+</tr>
+<tr>
+<td class="l data">Franklin W Olin College of Engineering</td>
+<td class="l data">Private</td>
+<td class="r data">      412</td>
+<td class="r data">     $97,183</td>
+<td class="r data">    $197,120</td>
+<td class="r data">     0.49</td>
+<td class="r data">       43</td>
+<td class="r data">     1459</td>
+</tr>
+<tr>
+<td class="l data">Amherst College *</td>
+<td class="l data">Private</td>
+<td class="r data">     1945</td>
+<td class="r data">    $107,000</td>
+<td class="r data">    $217,240</td>
+<td class="r data">     0.49</td>
+<td class="r data">       44</td>
+<td class="r data">     1462</td>
+</tr>
+<tr>
+<td class="l data">Merrimack College</td>
+<td class="l data">Private</td>
+<td class="r data">     3786</td>
+<td class="r data">     $78,347</td>
+<td class="r data">    $159,080</td>
+<td class="r data">     0.49</td>
+<td class="r data">       45</td>
+<td class="r data">     1463</td>
+</tr>
+<tr>
+<td class="l data">Bentley University</td>
+<td class="l data">Private</td>
+<td class="r data">     4352</td>
+<td class="r data">     $94,544</td>
+<td class="r data">    $192,000</td>
+<td class="r data">     0.49</td>
+<td class="r data">       46</td>
+<td class="r data">     1464</td>
+</tr>
+<tr>
+<td class="l data">Mount Holyoke College *</td>
+<td class="l data">Private</td>
+<td class="r data">     2393</td>
+<td class="r data">     $94,200</td>
+<td class="r data">    $191,760</td>
+<td class="r data">     0.49</td>
+<td class="r data">       47</td>
+<td class="r data">     1471</td>
+</tr>
+<tr>
+<td class="l data">Berklee College of Music</td>
+<td class="l data">Private</td>
+<td class="r data">     6952</td>
+<td class="r data">     $83,652</td>
+<td class="r data">    $171,000</td>
+<td class="r data">     0.49</td>
+<td class="r data">       48</td>
+<td class="r data">     1474</td>
+</tr>
+<tr>
+<td class="l data">Curry College</td>
+<td class="l data">Private</td>
+<td class="r data">     3132</td>
+<td class="r data">     $74,705</td>
+<td class="r data">    $154,384</td>
+<td class="r data">     0.48</td>
+<td class="r data">       49</td>
+<td class="r data">     1484</td>
+</tr>
+<tr>
+<td class="l data">Stonehill College</td>
+<td class="l data">Private</td>
+<td class="r data">     2536</td>
+<td class="r data">     $79,758</td>
+<td class="r data">    $165,200</td>
+<td class="r data">     0.48</td>
+<td class="r data">       50</td>
+<td class="r data">     1493</td>
+</tr>
+<tr>
+<td class="l data">Boston College *</td>
+<td class="l data">Private</td>
+<td class="r data">    10304</td>
+<td class="r data">    $103,000</td>
+<td class="r data">    $213,384</td>
+<td class="r data">     0.48</td>
+<td class="r data">       51</td>
+<td class="r data">     1494</td>
+</tr>
+<tr>
+<td class="l data">Brandeis University</td>
+<td class="l data">Private</td>
+<td class="r data">     3869</td>
+<td class="r data">    $102,523</td>
+<td class="r data">    $212,728</td>
+<td class="r data">     0.48</td>
+<td class="r data">       52</td>
+<td class="r data">     1498</td>
+</tr>
+<tr>
+<td class="l data">College of Our Lady of the Elms</td>
+<td class="l data">Private</td>
+<td class="r data">     1385</td>
+<td class="r data">     $66,539</td>
+<td class="r data">    $138,312</td>
+<td class="r data">     0.48</td>
+<td class="r data">       53</td>
+<td class="r data">     1505</td>
+</tr>
+<tr>
+<td class="l data">Becker College</td>
+<td class="l data">Private</td>
+<td class="r data">     2652</td>
+<td class="r data">     $73,049</td>
+<td class="r data">    $153,000</td>
+<td class="r data">     0.48</td>
+<td class="r data">       54</td>
+<td class="r data">     1513</td>
+</tr>
+<tr>
+<td class="l data">Williams College *</td>
+<td class="l data">Private</td>
+<td class="r data">     2227</td>
+<td class="r data">    $102,000</td>
+<td class="r data">    $214,200</td>
+<td class="r data">     0.48</td>
+<td class="r data">       55</td>
+<td class="r data">     1520</td>
+</tr>
+<tr>
+<td class="l data">The New England Conservatory of Music</td>
+<td class="l data">Private</td>
+<td class="r data">      441</td>
+<td class="r data">     $87,826</td>
+<td class="r data">    $187,720</td>
+<td class="r data">     0.47</td>
+<td class="r data">       56</td>
+<td class="r data">     1538</td>
+</tr>
+<tr>
+<td class="l data">Emerson College</td>
+<td class="l data">Private</td>
+<td class="r data">     4088</td>
+<td class="r data">     $80,846</td>
+<td class="r data">    $174,912</td>
+<td class="r data">     0.46</td>
+<td class="r data">       57</td>
+<td class="r data">     1556</td>
+</tr>
+<tr>
+<td class="l data">Wheelock College</td>
+<td class="l data">Private</td>
+<td class="r data">      810</td>
+<td class="r data">     $66,833</td>
+<td class="r data">    $145,400</td>
+<td class="r data">     0.46</td>
+<td class="r data">       58</td>
+<td class="r data">     1570</td>
+</tr>
+<tr>
+<td class="l data">Emmanuel College</td>
+<td class="l data">Private</td>
+<td class="r data">     2205</td>
+<td class="r data">     $70,828</td>
+<td class="r data">    $155,376</td>
+<td class="r data">     0.46</td>
+<td class="r data">       59</td>
+<td class="r data">     1582</td>
+</tr>
+<tr>
+<td class="l data">Boston University *</td>
+<td class="l data">Private</td>
+<td class="r data">    22829</td>
+<td class="r data">     $93,900</td>
+<td class="r data">    $208,328</td>
+<td class="r data">     0.45</td>
+<td class="r data">       60</td>
+<td class="r data">     1592</td>
+</tr>
+<tr>
+<td class="l data">Hult International Business School</td>
+<td class="l data">Private</td>
+<td class="r data">      518</td>
+<td class="r data">     $68,533</td>
+<td class="r data">    $154,336</td>
+<td class="r data">     0.44</td>
+<td class="r data">       61</td>
+<td class="r data">     1611</td>
+</tr>
+<tr>
+<td class="l data">Regis College</td>
+<td class="l data">Private</td>
+<td class="r data">     1344</td>
+<td class="r data">     $69,572</td>
+<td class="r data">    $159,280</td>
+<td class="r data">     0.44</td>
+<td class="r data">       62</td>
+<td class="r data">     1626</td>
+</tr>
+<tr>
+<td class="l data">Northeastern University *</td>
+<td class="l data">Private</td>
+<td class="r data">    18760</td>
+<td class="r data">     $86,400</td>
+<td class="r data">    $197,988</td>
+<td class="r data">     0.44</td>
+<td class="r data">       63</td>
+<td class="r data">     1628</td>
+</tr>
+<tr>
+<td class="l data">Smith College *</td>
+<td class="l data">Private</td>
+<td class="r data">     2594</td>
+<td class="r data">     $83,900</td>
+<td class="r data">    $200,176</td>
+<td class="r data">     0.42</td>
+<td class="r data">       64</td>
+<td class="r data">     1648</td>
+</tr>
+<tr>
+<td class="l data">Wheaton College</td>
+<td class="l data">Private</td>
+<td class="r data">     1695</td>
+<td class="r data">     $84,738</td>
+<td class="r data">    $203,400</td>
+<td class="r data">     0.42</td>
+<td class="r data">       65</td>
+<td class="r data">     1656</td>
+</tr>
+<tr>
+<td class="l data">Wellesley College *</td>
+<td class="l data">Private</td>
+<td class="r data">     2688</td>
+<td class="r data">     $83,500</td>
+<td class="r data">    $204,592</td>
+<td class="r data">     0.41</td>
+<td class="r data">       66</td>
+<td class="r data">     1666</td>
+</tr>
+<tr>
+<td class="l data">Hampshire College</td>
+<td class="l data">Private</td>
+<td class="r data">     1382</td>
+<td class="r data">     $83,243</td>
+<td class="r data">    $206,432</td>
+<td class="r data">      0.4</td>
+<td class="r data">       67</td>
+<td class="r data">     1673</td>
+</tr>
+<tr>
+<td class="l data">Simmons College</td>
+<td class="l data">Private</td>
+<td class="r data">     1825</td>
+<td class="r data">     $62,920</td>
+<td class="r data">    $158,440</td>
+<td class="r data">      0.4</td>
+<td class="r data">       68</td>
+<td class="r data">     1678</td>
+</tr>
+<tr>
+<td class="l data">Bard College at Simon&#39;s Rock</td>
+<td class="l data">Private</td>
+<td class="r data">      402</td>
+<td class="r data">     $83,616</td>
+<td class="r data">    $213,672</td>
+<td class="r data">     0.39</td>
+<td class="r data">       69</td>
+<td class="r data">     1684</td>
+</tr>
+<tr>
+<td class="l data">Bay Path University</td>
+<td class="l data">Private</td>
+<td class="r data">     2270</td>
+<td class="r data">     $50,908</td>
+<td class="r data">    $134,228</td>
+<td class="r data">     0.38</td>
+<td class="r data">       70</td>
+<td class="r data">     1697</td>
+</tr>
+<tr>
+<td class="l data">Laboure College</td>
+<td class="l data">Private</td>
+<td class="r data">     1245</td>
+<td class="r data">     $49,101</td>
+<td class="r data">    $144,412</td>
+<td class="r data">     0.34</td>
+<td class="r data">       71</td>
+<td class="r data">     1708</td>
+</tr>
+<tr>
+<td class="c linecontent" colspan="8">*&nbsp;An&nbsp;Instition&nbsp;that&#39;s&nbsp;Ten&nbsp;Year&nbsp;Median&nbsp;Salary&nbsp;was&nbsp;collected&nbsp;from&nbsp;a&nbsp;WSJ&nbsp;Study<br><a href='../OutStateMap.html'>Back to Out of State Map</a><br><a href='../ValueType.html'>Back to Main Page</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

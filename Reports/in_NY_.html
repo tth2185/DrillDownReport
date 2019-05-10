@@ -1,0 +1,3328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">In State Value Report for Institutions in New York            </td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c header" scope="col">School Name</th>
+<th class="c header" scope="col">Institution Type</th>
+<th class="c header" scope="col">Total Students</th>
+<th class="c header" scope="col">Ten Year Median Salary</th>
+<th class="c header" scope="col">In State Tuition (4 years)</th>
+<th class="c header" scope="col">In State Value</th>
+<th class="c header" scope="col">Ranking Within State</th>
+<th class="c header" scope="col">National Ranking</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data">United States Merchant Marine Academy</td>
+<td class="l data">Public</td>
+<td class="r data">      912</td>
+<td class="r data">     $97,722</td>
+<td class="r data">      $4,080</td>
+<td class="r data">    23.95</td>
+<td class="r data">        1</td>
+<td class="r data">        1</td>
+</tr>
+<tr>
+<td class="l data">Talmudical Institute of Upstate New York</td>
+<td class="l data">Private</td>
+<td class="r data">        9</td>
+<td class="r data">     $90,577</td>
+<td class="r data">     $23,200</td>
+<td class="r data">      3.9</td>
+<td class="r data">        2</td>
+<td class="r data">       13</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva D&#39;monsey Rabbinical College</td>
+<td class="l data">Private</td>
+<td class="r data">      116</td>
+<td class="r data">    $105,092</td>
+<td class="r data">     $27,200</td>
+<td class="r data">     3.86</td>
+<td class="r data">        3</td>
+<td class="r data">       14</td>
+</tr>
+<tr>
+<td class="l data">Mirrer Yeshiva Cent Institute</td>
+<td class="l data">Private</td>
+<td class="r data">      134</td>
+<td class="r data">     $98,180</td>
+<td class="r data">     $29,040</td>
+<td class="r data">     3.38</td>
+<td class="r data">        4</td>
+<td class="r data">       26</td>
+</tr>
+<tr>
+<td class="l data">Talmudical Seminary of Bobov</td>
+<td class="l data">Private</td>
+<td class="r data">      381</td>
+<td class="r data">    $101,648</td>
+<td class="r data">     $30,400</td>
+<td class="r data">     3.34</td>
+<td class="r data">        5</td>
+<td class="r data">       27</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva Gedola Ohr Yisrael</td>
+<td class="l data">Private</td>
+<td class="r data">       43</td>
+<td class="r data">     $97,395</td>
+<td class="r data">     $29,200</td>
+<td class="r data">     3.34</td>
+<td class="r data">        6</td>
+<td class="r data">       29</td>
+</tr>
+<tr>
+<td class="l data">CUNY Bernard M Baruch College</td>
+<td class="l data">Public</td>
+<td class="r data">    18775</td>
+<td class="r data">     $92,193</td>
+<td class="r data">     $28,248</td>
+<td class="r data">     3.26</td>
+<td class="r data">        7</td>
+<td class="r data">       31</td>
+</tr>
+<tr>
+<td class="l data">CUNY City College</td>
+<td class="l data">Public</td>
+<td class="r data">    15842</td>
+<td class="r data">     $88,799</td>
+<td class="r data">     $27,760</td>
+<td class="r data">      3.2</td>
+<td class="r data">        8</td>
+<td class="r data">       33</td>
+</tr>
+<tr>
+<td class="l data">CUNY New York City College of Technology</td>
+<td class="l data">Public</td>
+<td class="r data">    20860</td>
+<td class="r data">     $87,162</td>
+<td class="r data">     $27,680</td>
+<td class="r data">     3.15</td>
+<td class="r data">        9</td>
+<td class="r data">       35</td>
+</tr>
+<tr>
+<td class="l data">Yeshivat Mikdash Melech</td>
+<td class="l data">Private</td>
+<td class="r data">       27</td>
+<td class="r data">    $101,429</td>
+<td class="r data">     $32,400</td>
+<td class="r data">     3.13</td>
+<td class="r data">       10</td>
+<td class="r data">       39</td>
+</tr>
+<tr>
+<td class="l data">SUNY Maritime College</td>
+<td class="l data">Public</td>
+<td class="r data">     1778</td>
+<td class="r data">     $99,566</td>
+<td class="r data">     $32,296</td>
+<td class="r data">     3.08</td>
+<td class="r data">       11</td>
+<td class="r data">       46</td>
+</tr>
+<tr>
+<td class="l data">CUNY Queens College</td>
+<td class="l data">Public</td>
+<td class="r data">    20379</td>
+<td class="r data">     $87,389</td>
+<td class="r data">     $28,552</td>
+<td class="r data">     3.06</td>
+<td class="r data">       12</td>
+<td class="r data">       48</td>
+</tr>
+<tr>
+<td class="l data">Bais Binyomin Academy</td>
+<td class="l data">Private</td>
+<td class="r data">       50</td>
+<td class="r data">     $96,670</td>
+<td class="r data">     $32,000</td>
+<td class="r data">     3.02</td>
+<td class="r data">       13</td>
+<td class="r data">       52</td>
+</tr>
+<tr>
+<td class="l data">Central Yeshiva Tomchei Tmimim Lubavitz</td>
+<td class="l data">Private</td>
+<td class="r data">      421</td>
+<td class="r data">     $92,352</td>
+<td class="r data">     $30,800</td>
+<td class="r data">        3</td>
+<td class="r data">       14</td>
+<td class="r data">       55</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva Zichron Aryeh</td>
+<td class="l data">Private</td>
+<td class="r data">       23</td>
+<td class="r data">    $104,714</td>
+<td class="r data">     $35,000</td>
+<td class="r data">     2.99</td>
+<td class="r data">       15</td>
+<td class="r data">       59</td>
+</tr>
+<tr>
+<td class="l data">Mesivta of Eastern Parkway-Yeshiva Zichron Meilech</td>
+<td class="l data">Private</td>
+<td class="r data">       36</td>
+<td class="r data">    $102,272</td>
+<td class="r data">     $34,400</td>
+<td class="r data">     2.97</td>
+<td class="r data">       16</td>
+<td class="r data">       62</td>
+</tr>
+<tr>
+<td class="l data">CUNY John Jay College of Criminal Justice</td>
+<td class="l data">Public</td>
+<td class="r data">    15583</td>
+<td class="r data">     $83,571</td>
+<td class="r data">     $28,280</td>
+<td class="r data">     2.96</td>
+<td class="r data">       17</td>
+<td class="r data">       67</td>
+</tr>
+<tr>
+<td class="l data">CUNY Hunter College</td>
+<td class="l data">Public</td>
+<td class="r data">    20626</td>
+<td class="r data">     $82,275</td>
+<td class="r data">     $27,928</td>
+<td class="r data">     2.95</td>
+<td class="r data">       18</td>
+<td class="r data">       69</td>
+</tr>
+<tr>
+<td class="l data">CUNY Brooklyn College</td>
+<td class="l data">Public</td>
+<td class="r data">    17679</td>
+<td class="r data">     $82,401</td>
+<td class="r data">     $28,160</td>
+<td class="r data">     2.93</td>
+<td class="r data">       19</td>
+<td class="r data">       72</td>
+</tr>
+<tr>
+<td class="l data">CUNY York College</td>
+<td class="l data">Public</td>
+<td class="r data">    10396</td>
+<td class="r data">     $80,441</td>
+<td class="r data">     $27,832</td>
+<td class="r data">     2.89</td>
+<td class="r data">       20</td>
+<td class="r data">       78</td>
+</tr>
+<tr>
+<td class="l data">Rabbinical College of Long Island</td>
+<td class="l data">Private</td>
+<td class="r data">      152</td>
+<td class="r data">     $99,006</td>
+<td class="r data">     $35,200</td>
+<td class="r data">     2.81</td>
+<td class="r data">       21</td>
+<td class="r data">       90</td>
+</tr>
+<tr>
+<td class="l data">Beth Medrash Meor Yitzchok</td>
+<td class="l data">Private</td>
+<td class="r data">      199</td>
+<td class="r data">    $102,167</td>
+<td class="r data">     $36,400</td>
+<td class="r data">     2.81</td>
+<td class="r data">       22</td>
+<td class="r data">       93</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva of Machzikai Hadas</td>
+<td class="l data">Private</td>
+<td class="r data">      443</td>
+<td class="r data">    $102,895</td>
+<td class="r data">     $36,800</td>
+<td class="r data">      2.8</td>
+<td class="r data">       23</td>
+<td class="r data">       96</td>
+</tr>
+<tr>
+<td class="l data">Beth Hamedrash Shaarei Yosher Institute</td>
+<td class="l data">Private</td>
+<td class="r data">       38</td>
+<td class="r data">    $101,397</td>
+<td class="r data">     $36,600</td>
+<td class="r data">     2.77</td>
+<td class="r data">       24</td>
+<td class="r data">       98</td>
+</tr>
+<tr>
+<td class="l data">SUNY Polytechnic Institute</td>
+<td class="l data">Public</td>
+<td class="r data">     2206</td>
+<td class="r data">     $88,131</td>
+<td class="r data">     $31,992</td>
+<td class="r data">     2.75</td>
+<td class="r data">       25</td>
+<td class="r data">      100</td>
+</tr>
+<tr>
+<td class="l data">Fashion Institute of Technology *</td>
+<td class="l data">Public</td>
+<td class="r data">    10610</td>
+<td class="r data">     $81,000</td>
+<td class="r data">     $29,852</td>
+<td class="r data">     2.71</td>
+<td class="r data">       26</td>
+<td class="r data">      106</td>
+</tr>
+<tr>
+<td class="l data">Talmudical Seminary Oholei Torah</td>
+<td class="l data">Private</td>
+<td class="r data">      276</td>
+<td class="r data">    $100,115</td>
+<td class="r data">     $37,200</td>
+<td class="r data">     2.69</td>
+<td class="r data">       27</td>
+<td class="r data">      113</td>
+</tr>
+<tr>
+<td class="l data">CUNY Lehman College</td>
+<td class="l data">Public</td>
+<td class="r data">    15231</td>
+<td class="r data">     $75,317</td>
+<td class="r data">     $28,040</td>
+<td class="r data">     2.69</td>
+<td class="r data">       28</td>
+<td class="r data">      114</td>
+</tr>
+<tr>
+<td class="l data">Beis Medrash Heichal Dovid</td>
+<td class="l data">Private</td>
+<td class="r data">      115</td>
+<td class="r data">    $100,351</td>
+<td class="r data">     $37,500</td>
+<td class="r data">     2.68</td>
+<td class="r data">       29</td>
+<td class="r data">      116</td>
+</tr>
+<tr>
+<td class="l data">Sh&#39;or Yoshuv Rabbinical College</td>
+<td class="l data">Private</td>
+<td class="r data">       84</td>
+<td class="r data">    $100,911</td>
+<td class="r data">     $37,840</td>
+<td class="r data">     2.67</td>
+<td class="r data">       30</td>
+<td class="r data">      117</td>
+</tr>
+<tr>
+<td class="l data">SUNY College of Environmental Science and Forestry</td>
+<td class="l data">Public</td>
+<td class="r data">     1825</td>
+<td class="r data">     $89,906</td>
+<td class="r data">     $34,172</td>
+<td class="r data">     2.63</td>
+<td class="r data">       31</td>
+<td class="r data">      123</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva of the Telshe Alumni</td>
+<td class="l data">Private</td>
+<td class="r data">      117</td>
+<td class="r data">     $99,923</td>
+<td class="r data">     $38,000</td>
+<td class="r data">     2.63</td>
+<td class="r data">       32</td>
+<td class="r data">      124</td>
+</tr>
+<tr>
+<td class="l data">Bet Medrash Gadol Ateret Torah</td>
+<td class="l data">Private</td>
+<td class="r data">      119</td>
+<td class="r data">    $101,812</td>
+<td class="r data">     $38,800</td>
+<td class="r data">     2.62</td>
+<td class="r data">       33</td>
+<td class="r data">      127</td>
+</tr>
+<tr>
+<td class="l data">Farmingdale State College</td>
+<td class="l data">Public</td>
+<td class="r data">    12307</td>
+<td class="r data">     $83,696</td>
+<td class="r data">     $32,304</td>
+<td class="r data">     2.59</td>
+<td class="r data">       34</td>
+<td class="r data">      137</td>
+</tr>
+<tr>
+<td class="l data">Rabbinical Seminary of America</td>
+<td class="l data">Private</td>
+<td class="r data">      248</td>
+<td class="r data">    $101,275</td>
+<td class="r data">     $39,200</td>
+<td class="r data">     2.58</td>
+<td class="r data">       35</td>
+<td class="r data">      138</td>
+</tr>
+<tr>
+<td class="l data">SUNY College of Technology at Alfred</td>
+<td class="l data">Public</td>
+<td class="r data">     4198</td>
+<td class="r data">     $85,250</td>
+<td class="r data">     $33,308</td>
+<td class="r data">     2.56</td>
+<td class="r data">       36</td>
+<td class="r data">      143</td>
+</tr>
+<tr>
+<td class="l data">Binghamton University *</td>
+<td class="l data">Public</td>
+<td class="r data">    14736</td>
+<td class="r data">     $95,900</td>
+<td class="r data">     $38,092</td>
+<td class="r data">     2.52</td>
+<td class="r data">       37</td>
+<td class="r data">      151</td>
+</tr>
+<tr>
+<td class="l data">Stony Brook University *</td>
+<td class="l data">Public</td>
+<td class="r data">    19871</td>
+<td class="r data">     $93,000</td>
+<td class="r data">     $37,028</td>
+<td class="r data">     2.51</td>
+<td class="r data">       38</td>
+<td class="r data">      153</td>
+</tr>
+<tr>
+<td class="l data">Yeshivas Novominsk</td>
+<td class="l data">Private</td>
+<td class="r data">      165</td>
+<td class="r data">     $98,447</td>
+<td class="r data">     $40,000</td>
+<td class="r data">     2.46</td>
+<td class="r data">       39</td>
+<td class="r data">      161</td>
+</tr>
+<tr>
+<td class="l data">SUNY College at Old Westbury</td>
+<td class="l data">Public</td>
+<td class="r data">     5335</td>
+<td class="r data">     $77,395</td>
+<td class="r data">     $31,532</td>
+<td class="r data">     2.45</td>
+<td class="r data">       40</td>
+<td class="r data">      166</td>
+</tr>
+<tr>
+<td class="l data">SUNY College at Oswego</td>
+<td class="l data">Public</td>
+<td class="r data">     8251</td>
+<td class="r data">     $80,010</td>
+<td class="r data">     $32,764</td>
+<td class="r data">     2.44</td>
+<td class="r data">       41</td>
+<td class="r data">      170</td>
+</tr>
+<tr>
+<td class="l data">State University of New York at New Paltz</td>
+<td class="l data">Public</td>
+<td class="r data">     7709</td>
+<td class="r data">     $75,509</td>
+<td class="r data">     $31,100</td>
+<td class="r data">     2.43</td>
+<td class="r data">       42</td>
+<td class="r data">      171</td>
+</tr>
+<tr>
+<td class="l data">SUNY Buffalo State</td>
+<td class="l data">Public</td>
+<td class="r data">     9611</td>
+<td class="r data">     $76,959</td>
+<td class="r data">     $31,904</td>
+<td class="r data">     2.41</td>
+<td class="r data">       43</td>
+<td class="r data">      180</td>
+</tr>
+<tr>
+<td class="l data">Morrisville State College</td>
+<td class="l data">Public</td>
+<td class="r data">     3713</td>
+<td class="r data">     $78,220</td>
+<td class="r data">     $32,996</td>
+<td class="r data">     2.37</td>
+<td class="r data">       44</td>
+<td class="r data">      201</td>
+</tr>
+<tr>
+<td class="l data">SUNY College at Plattsburgh</td>
+<td class="l data">Public</td>
+<td class="r data">     5846</td>
+<td class="r data">     $75,887</td>
+<td class="r data">     $32,264</td>
+<td class="r data">     2.35</td>
+<td class="r data">       45</td>
+<td class="r data">      207</td>
+</tr>
+<tr>
+<td class="l data">SUNY College of Technology at Delhi</td>
+<td class="l data">Public</td>
+<td class="r data">     4037</td>
+<td class="r data">     $76,273</td>
+<td class="r data">     $32,480</td>
+<td class="r data">     2.35</td>
+<td class="r data">       46</td>
+<td class="r data">      210</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva Sholom Shachna</td>
+<td class="l data">Private</td>
+<td class="r data">      109</td>
+<td class="r data">     $99,971</td>
+<td class="r data">     $42,800</td>
+<td class="r data">     2.34</td>
+<td class="r data">       47</td>
+<td class="r data">      214</td>
+</tr>
+<tr>
+<td class="l data">SUNY College at Brockport</td>
+<td class="l data">Public</td>
+<td class="r data">     7881</td>
+<td class="r data">     $75,416</td>
+<td class="r data">     $32,616</td>
+<td class="r data">     2.31</td>
+<td class="r data">       48</td>
+<td class="r data">      225</td>
+</tr>
+<tr>
+<td class="l data">SUNY Cortland</td>
+<td class="l data">Public</td>
+<td class="r data">     6972</td>
+<td class="r data">     $76,244</td>
+<td class="r data">     $33,200</td>
+<td class="r data">      2.3</td>
+<td class="r data">       49</td>
+<td class="r data">      231</td>
+</tr>
+<tr>
+<td class="l data">SUNY Oneonta</td>
+<td class="l data">Public</td>
+<td class="r data">     6150</td>
+<td class="r data">     $74,770</td>
+<td class="r data">     $32,664</td>
+<td class="r data">     2.29</td>
+<td class="r data">       50</td>
+<td class="r data">      233</td>
+</tr>
+<tr>
+<td class="l data">Torah Temimah Talmudical Seminary</td>
+<td class="l data">Private</td>
+<td class="r data">       84</td>
+<td class="r data">     $98,410</td>
+<td class="r data">     $43,000</td>
+<td class="r data">     2.29</td>
+<td class="r data">       51</td>
+<td class="r data">      235</td>
+</tr>
+<tr>
+<td class="l data">Mesivta Torah Vodaath Rabbinical Seminary</td>
+<td class="l data">Private</td>
+<td class="r data">      292</td>
+<td class="r data">    $105,334</td>
+<td class="r data">     $46,040</td>
+<td class="r data">     2.29</td>
+<td class="r data">       52</td>
+<td class="r data">      236</td>
+</tr>
+<tr>
+<td class="l data">SUNY College of Agriculture and Technology at Cobleskill</td>
+<td class="l data">Public</td>
+<td class="r data">     3213</td>
+<td class="r data">     $74,460</td>
+<td class="r data">     $32,556</td>
+<td class="r data">     2.29</td>
+<td class="r data">       53</td>
+<td class="r data">      238</td>
+</tr>
+<tr>
+<td class="l data">SUNY College at Potsdam</td>
+<td class="l data">Public</td>
+<td class="r data">     3694</td>
+<td class="r data">     $74,953</td>
+<td class="r data">     $32,884</td>
+<td class="r data">     2.28</td>
+<td class="r data">       54</td>
+<td class="r data">      245</td>
+</tr>
+<tr>
+<td class="l data">SUNY at Purchase College</td>
+<td class="l data">Public</td>
+<td class="r data">     4705</td>
+<td class="r data">     $77,173</td>
+<td class="r data">     $33,992</td>
+<td class="r data">     2.27</td>
+<td class="r data">       55</td>
+<td class="r data">      247</td>
+</tr>
+<tr>
+<td class="l data">Machzikei Hadath Rabbinical College</td>
+<td class="l data">Private</td>
+<td class="r data">      195</td>
+<td class="r data">    $101,949</td>
+<td class="r data">     $45,200</td>
+<td class="r data">     2.26</td>
+<td class="r data">       56</td>
+<td class="r data">      253</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva Gedolah Kesser Torah</td>
+<td class="l data">Private</td>
+<td class="r data">       92</td>
+<td class="r data">    $101,141</td>
+<td class="r data">     $45,200</td>
+<td class="r data">     2.24</td>
+<td class="r data">       57</td>
+<td class="r data">      256</td>
+</tr>
+<tr>
+<td class="l data">Mesivtha Tifereth Jerusalem of America</td>
+<td class="l data">Private</td>
+<td class="r data">       57</td>
+<td class="r data">    $100,591</td>
+<td class="r data">     $45,000</td>
+<td class="r data">     2.24</td>
+<td class="r data">       58</td>
+<td class="r data">      257</td>
+</tr>
+<tr>
+<td class="l data">SUNY at Fredonia</td>
+<td class="l data">Public</td>
+<td class="r data">     4639</td>
+<td class="r data">     $74,053</td>
+<td class="r data">     $33,144</td>
+<td class="r data">     2.23</td>
+<td class="r data">       59</td>
+<td class="r data">      258</td>
+</tr>
+<tr>
+<td class="l data">SUNY College of Technology at Canton</td>
+<td class="l data">Public</td>
+<td class="r data">     5183</td>
+<td class="r data">     $71,827</td>
+<td class="r data">     $32,520</td>
+<td class="r data">     2.21</td>
+<td class="r data">       60</td>
+<td class="r data">      268</td>
+</tr>
+<tr>
+<td class="l data">Ohr Hameir Theological Seminary</td>
+<td class="l data">Private</td>
+<td class="r data">      138</td>
+<td class="r data">     $99,196</td>
+<td class="r data">     $45,000</td>
+<td class="r data">      2.2</td>
+<td class="r data">       61</td>
+<td class="r data">      270</td>
+</tr>
+<tr>
+<td class="l data">SUNY College at Geneseo</td>
+<td class="l data">Public</td>
+<td class="r data">     5792</td>
+<td class="r data">     $73,962</td>
+<td class="r data">     $33,632</td>
+<td class="r data">      2.2</td>
+<td class="r data">       62</td>
+<td class="r data">      271</td>
+</tr>
+<tr>
+<td class="l data">SUNY at Albany</td>
+<td class="l data">Public</td>
+<td class="r data">    14939</td>
+<td class="r data">     $82,659</td>
+<td class="r data">     $37,960</td>
+<td class="r data">     2.18</td>
+<td class="r data">       63</td>
+<td class="r data">      279</td>
+</tr>
+<tr>
+<td class="l data">University at Buffalo</td>
+<td class="l data">Public</td>
+<td class="r data">    23075</td>
+<td class="r data">     $85,255</td>
+<td class="r data">     $39,312</td>
+<td class="r data">     2.17</td>
+<td class="r data">       64</td>
+<td class="r data">      283</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva Derech Chaim</td>
+<td class="l data">Private</td>
+<td class="r data">       81</td>
+<td class="r data">    $100,392</td>
+<td class="r data">     $47,200</td>
+<td class="r data">     2.13</td>
+<td class="r data">       65</td>
+<td class="r data">      292</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva of Far Rockaway Derech Ayson Rabbinical Seminary</td>
+<td class="l data">Private</td>
+<td class="r data">       37</td>
+<td class="r data">     $98,546</td>
+<td class="r data">     $47,000</td>
+<td class="r data">      2.1</td>
+<td class="r data">       66</td>
+<td class="r data">      306</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva Karlin Stolin</td>
+<td class="l data">Private</td>
+<td class="r data">      143</td>
+<td class="r data">    $100,610</td>
+<td class="r data">     $48,000</td>
+<td class="r data">      2.1</td>
+<td class="r data">       67</td>
+<td class="r data">      307</td>
+</tr>
+<tr>
+<td class="l data">Rabbinical Academy Mesivta Rabbi Chaim Berlin</td>
+<td class="l data">Private</td>
+<td class="r data">      159</td>
+<td class="r data">    $101,589</td>
+<td class="r data">     $49,800</td>
+<td class="r data">     2.04</td>
+<td class="r data">       68</td>
+<td class="r data">      328</td>
+</tr>
+<tr>
+<td class="l data">Rabbinical College Beth Shraga</td>
+<td class="l data">Private</td>
+<td class="r data">       65</td>
+<td class="r data">    $101,813</td>
+<td class="r data">     $51,800</td>
+<td class="r data">     1.97</td>
+<td class="r data">       69</td>
+<td class="r data">      365</td>
+</tr>
+<tr>
+<td class="l data">Yeshivath Zichron Moshe</td>
+<td class="l data">Private</td>
+<td class="r data">      207</td>
+<td class="r data">     $95,380</td>
+<td class="r data">     $50,960</td>
+<td class="r data">     1.87</td>
+<td class="r data">       70</td>
+<td class="r data">      408</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva Shaar Hatorah</td>
+<td class="l data">Private</td>
+<td class="r data">       76</td>
+<td class="r data">    $102,875</td>
+<td class="r data">     $60,940</td>
+<td class="r data">     1.69</td>
+<td class="r data">       71</td>
+<td class="r data">      480</td>
+</tr>
+<tr>
+<td class="l data">Plaza College</td>
+<td class="l data">Private</td>
+<td class="r data">     1328</td>
+<td class="r data">     $70,706</td>
+<td class="r data">     $49,800</td>
+<td class="r data">     1.42</td>
+<td class="r data">       72</td>
+<td class="r data">      587</td>
+</tr>
+<tr>
+<td class="l data">DeVry College of New York</td>
+<td class="l data">Private</td>
+<td class="r data">     1605</td>
+<td class="r data">     $82,134</td>
+<td class="r data">     $61,920</td>
+<td class="r data">     1.33</td>
+<td class="r data">       73</td>
+<td class="r data">      627</td>
+</tr>
+<tr>
+<td class="l data">Jamestown Business College</td>
+<td class="l data">Private</td>
+<td class="r data">      392</td>
+<td class="r data">     $61,876</td>
+<td class="r data">     $50,400</td>
+<td class="r data">     1.23</td>
+<td class="r data">       74</td>
+<td class="r data">      659</td>
+</tr>
+<tr>
+<td class="l data">Davis College</td>
+<td class="l data">Private</td>
+<td class="r data">      370</td>
+<td class="r data">     $80,350</td>
+<td class="r data">     $67,200</td>
+<td class="r data">      1.2</td>
+<td class="r data">       75</td>
+<td class="r data">      666</td>
+</tr>
+<tr>
+<td class="l data">Monroe College</td>
+<td class="l data">Private</td>
+<td class="r data">     8166</td>
+<td class="r data">     $68,552</td>
+<td class="r data">     $59,904</td>
+<td class="r data">     1.14</td>
+<td class="r data">       76</td>
+<td class="r data">      679</td>
+</tr>
+<tr>
+<td class="l data">Five Towns College</td>
+<td class="l data">Private</td>
+<td class="r data">      711</td>
+<td class="r data">     $84,671</td>
+<td class="r data">     $77,520</td>
+<td class="r data">     1.09</td>
+<td class="r data">       77</td>
+<td class="r data">      701</td>
+</tr>
+<tr>
+<td class="l data">Maria College of Albany</td>
+<td class="l data">Private</td>
+<td class="r data">      951</td>
+<td class="r data">     $56,020</td>
+<td class="r data">     $58,440</td>
+<td class="r data">     0.96</td>
+<td class="r data">       78</td>
+<td class="r data">      762</td>
+</tr>
+<tr>
+<td class="l data">Touro College</td>
+<td class="l data">Private</td>
+<td class="r data">     8622</td>
+<td class="r data">     $63,907</td>
+<td class="r data">     $68,216</td>
+<td class="r data">     0.94</td>
+<td class="r data">       79</td>
+<td class="r data">      774</td>
+</tr>
+<tr>
+<td class="l data">Mercy College *</td>
+<td class="l data">Private</td>
+<td class="r data">     8728</td>
+<td class="r data">     $62,600</td>
+<td class="r data">     $74,856</td>
+<td class="r data">     0.84</td>
+<td class="r data">       80</td>
+<td class="r data">      825</td>
+</tr>
+<tr>
+<td class="l data">Utica College</td>
+<td class="l data">Private</td>
+<td class="r data">     4214</td>
+<td class="r data">     $68,895</td>
+<td class="r data">     $82,704</td>
+<td class="r data">     0.83</td>
+<td class="r data">       81</td>
+<td class="r data">      828</td>
+</tr>
+<tr>
+<td class="l data">Villa Maria College</td>
+<td class="l data">Private</td>
+<td class="r data">      639</td>
+<td class="r data">     $71,838</td>
+<td class="r data">     $88,320</td>
+<td class="r data">     0.81</td>
+<td class="r data">       82</td>
+<td class="r data">      837</td>
+</tr>
+<tr>
+<td class="l data">The College of Westchester</td>
+<td class="l data">Private</td>
+<td class="r data">     1420</td>
+<td class="r data">     $66,756</td>
+<td class="r data">     $84,060</td>
+<td class="r data">     0.79</td>
+<td class="r data">       83</td>
+<td class="r data">      854</td>
+</tr>
+<tr>
+<td class="l data">Paul Smiths College of Arts and Science</td>
+<td class="l data">Private</td>
+<td class="r data">      875</td>
+<td class="r data">     $87,714</td>
+<td class="r data">    $110,484</td>
+<td class="r data">     0.79</td>
+<td class="r data">       84</td>
+<td class="r data">      855</td>
+</tr>
+<tr>
+<td class="l data">Metropolitan College of New York</td>
+<td class="l data">Private</td>
+<td class="r data">     1011</td>
+<td class="r data">     $60,739</td>
+<td class="r data">     $76,720</td>
+<td class="r data">     0.79</td>
+<td class="r data">       85</td>
+<td class="r data">      859</td>
+</tr>
+<tr>
+<td class="l data">Hilbert College</td>
+<td class="l data">Private</td>
+<td class="r data">     1449</td>
+<td class="r data">     $67,738</td>
+<td class="r data">     $87,000</td>
+<td class="r data">     0.78</td>
+<td class="r data">       86</td>
+<td class="r data">      866</td>
+</tr>
+<tr>
+<td class="l data">Nyack College</td>
+<td class="l data">Private</td>
+<td class="r data">     1724</td>
+<td class="r data">     $74,135</td>
+<td class="r data">    $101,400</td>
+<td class="r data">     0.73</td>
+<td class="r data">       87</td>
+<td class="r data">      906</td>
+</tr>
+<tr>
+<td class="l data">Alfred University</td>
+<td class="l data">Private</td>
+<td class="r data">     2017</td>
+<td class="r data">     $81,275</td>
+<td class="r data">    $112,456</td>
+<td class="r data">     0.72</td>
+<td class="r data">       88</td>
+<td class="r data">      913</td>
+</tr>
+<tr>
+<td class="l data">St Francis College</td>
+<td class="l data">Private</td>
+<td class="r data">     2745</td>
+<td class="r data">     $75,062</td>
+<td class="r data">    $104,752</td>
+<td class="r data">     0.72</td>
+<td class="r data">       89</td>
+<td class="r data">      924</td>
+</tr>
+<tr>
+<td class="l data">St. Joseph&#39;s College-New York</td>
+<td class="l data">Private</td>
+<td class="r data">     1085</td>
+<td class="r data">     $72,492</td>
+<td class="r data">    $106,200</td>
+<td class="r data">     0.68</td>
+<td class="r data">       90</td>
+<td class="r data">      971</td>
+</tr>
+<tr>
+<td class="l data">Webb Institute</td>
+<td class="l data">Private</td>
+<td class="r data">       92</td>
+<td class="r data">    $127,196</td>
+<td class="r data">    $195,100</td>
+<td class="r data">     0.65</td>
+<td class="r data">       91</td>
+<td class="r data">     1022</td>
+</tr>
+<tr>
+<td class="l data">Dominican College of Blauvelt</td>
+<td class="l data">Private</td>
+<td class="r data">     1663</td>
+<td class="r data">     $72,955</td>
+<td class="r data">    $113,792</td>
+<td class="r data">     0.64</td>
+<td class="r data">       92</td>
+<td class="r data">     1039</td>
+</tr>
+<tr>
+<td class="l data">St. Thomas Aquinas College</td>
+<td class="l data">Private</td>
+<td class="r data">     1973</td>
+<td class="r data">     $77,962</td>
+<td class="r data">    $123,000</td>
+<td class="r data">     0.63</td>
+<td class="r data">       93</td>
+<td class="r data">     1049</td>
+</tr>
+<tr>
+<td class="l data">Daemen College</td>
+<td class="l data">Private</td>
+<td class="r data">     2176</td>
+<td class="r data">     $70,044</td>
+<td class="r data">    $111,960</td>
+<td class="r data">     0.63</td>
+<td class="r data">       94</td>
+<td class="r data">     1078</td>
+</tr>
+<tr>
+<td class="l data">St Bonaventure University</td>
+<td class="l data">Private</td>
+<td class="r data">     1684</td>
+<td class="r data">     $82,891</td>
+<td class="r data">    $133,324</td>
+<td class="r data">     0.62</td>
+<td class="r data">       95</td>
+<td class="r data">     1086</td>
+</tr>
+<tr>
+<td class="l data">New York Institute of Technology</td>
+<td class="l data">Private</td>
+<td class="r data">     4035</td>
+<td class="r data">     $89,064</td>
+<td class="r data">    $143,480</td>
+<td class="r data">     0.62</td>
+<td class="r data">       96</td>
+<td class="r data">     1088</td>
+</tr>
+<tr>
+<td class="l data">Medaille College</td>
+<td class="l data">Private</td>
+<td class="r data">     1735</td>
+<td class="r data">     $70,060</td>
+<td class="r data">    $113,440</td>
+<td class="r data">     0.62</td>
+<td class="r data">       97</td>
+<td class="r data">     1097</td>
+</tr>
+<tr>
+<td class="l data">D&#39;Youville College</td>
+<td class="l data">Private</td>
+<td class="r data">     1893</td>
+<td class="r data">     $62,984</td>
+<td class="r data">    $103,480</td>
+<td class="r data">     0.61</td>
+<td class="r data">       98</td>
+<td class="r data">     1118</td>
+</tr>
+<tr>
+<td class="l data">Albany College of Pharmacy and Health Sciences</td>
+<td class="l data">Private</td>
+<td class="r data">      911</td>
+<td class="r data">     $81,570</td>
+<td class="r data">    $134,484</td>
+<td class="r data">     0.61</td>
+<td class="r data">       99</td>
+<td class="r data">     1123</td>
+</tr>
+<tr>
+<td class="l data">Houghton College</td>
+<td class="l data">Private</td>
+<td class="r data">     1231</td>
+<td class="r data">     $75,705</td>
+<td class="r data">    $126,160</td>
+<td class="r data">      0.6</td>
+<td class="r data">      100</td>
+<td class="r data">     1142</td>
+</tr>
+<tr>
+<td class="l data">Culinary Institute of America</td>
+<td class="l data">Private</td>
+<td class="r data">     4410</td>
+<td class="r data">     $75,751</td>
+<td class="r data">    $126,464</td>
+<td class="r data">      0.6</td>
+<td class="r data">      101</td>
+<td class="r data">     1145</td>
+</tr>
+<tr>
+<td class="l data">Cooper Union for the Advancement of Science and Art</td>
+<td class="l data">Private</td>
+<td class="r data">      921</td>
+<td class="r data">    $107,746</td>
+<td class="r data">    $180,400</td>
+<td class="r data">      0.6</td>
+<td class="r data">      102</td>
+<td class="r data">     1149</td>
+</tr>
+<tr>
+<td class="l data">Roberts Wesleyan College</td>
+<td class="l data">Private</td>
+<td class="r data">     1580</td>
+<td class="r data">     $73,167</td>
+<td class="r data">    $122,744</td>
+<td class="r data">      0.6</td>
+<td class="r data">      103</td>
+<td class="r data">     1153</td>
+</tr>
+<tr>
+<td class="l data">Siena College *</td>
+<td class="l data">Private</td>
+<td class="r data">     3288</td>
+<td class="r data">     $85,200</td>
+<td class="r data">    $142,940</td>
+<td class="r data">      0.6</td>
+<td class="r data">      104</td>
+<td class="r data">     1154</td>
+</tr>
+<tr>
+<td class="l data">Molloy College</td>
+<td class="l data">Private</td>
+<td class="r data">     6553</td>
+<td class="r data">     $69,592</td>
+<td class="r data">    $121,240</td>
+<td class="r data">     0.57</td>
+<td class="r data">      105</td>
+<td class="r data">     1205</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva University</td>
+<td class="l data">Private</td>
+<td class="r data">     2884</td>
+<td class="r data">     $96,255</td>
+<td class="r data">    $168,000</td>
+<td class="r data">     0.57</td>
+<td class="r data">      106</td>
+<td class="r data">     1207</td>
+</tr>
+<tr>
+<td class="l data">Canisius College</td>
+<td class="l data">Private</td>
+<td class="r data">     2861</td>
+<td class="r data">     $83,269</td>
+<td class="r data">    $145,816</td>
+<td class="r data">     0.57</td>
+<td class="r data">      107</td>
+<td class="r data">     1209</td>
+</tr>
+<tr>
+<td class="l data">Le Moyne College</td>
+<td class="l data">Private</td>
+<td class="r data">     3148</td>
+<td class="r data">     $77,415</td>
+<td class="r data">    $135,620</td>
+<td class="r data">     0.57</td>
+<td class="r data">      108</td>
+<td class="r data">     1210</td>
+</tr>
+<tr>
+<td class="l data">The Juilliard School</td>
+<td class="l data">Private</td>
+<td class="r data">      590</td>
+<td class="r data">     $98,534</td>
+<td class="r data">    $172,680</td>
+<td class="r data">     0.57</td>
+<td class="r data">      109</td>
+<td class="r data">     1211</td>
+</tr>
+<tr>
+<td class="l data">Concordia College-New York</td>
+<td class="l data">Private</td>
+<td class="r data">      971</td>
+<td class="r data">     $71,897</td>
+<td class="r data">    $126,400</td>
+<td class="r data">     0.57</td>
+<td class="r data">      110</td>
+<td class="r data">     1217</td>
+</tr>
+<tr>
+<td class="l data">Saint John Fisher College</td>
+<td class="l data">Private</td>
+<td class="r data">     2976</td>
+<td class="r data">     $74,915</td>
+<td class="r data">    $132,480</td>
+<td class="r data">     0.57</td>
+<td class="r data">      111</td>
+<td class="r data">     1225</td>
+</tr>
+<tr>
+<td class="l data">The Sage Colleges</td>
+<td class="l data">Private</td>
+<td class="r data">     1560</td>
+<td class="r data">     $67,445</td>
+<td class="r data">    $119,456</td>
+<td class="r data">     0.56</td>
+<td class="r data">      112</td>
+<td class="r data">     1228</td>
+</tr>
+<tr>
+<td class="l data">The College of Saint Rose</td>
+<td class="l data">Private</td>
+<td class="r data">     2648</td>
+<td class="r data">     $71,354</td>
+<td class="r data">    $126,616</td>
+<td class="r data">     0.56</td>
+<td class="r data">      113</td>
+<td class="r data">     1233</td>
+</tr>
+<tr>
+<td class="l data">Clarkson University</td>
+<td class="l data">Private</td>
+<td class="r data">     3335</td>
+<td class="r data">    $106,689</td>
+<td class="r data">    $191,800</td>
+<td class="r data">     0.56</td>
+<td class="r data">      114</td>
+<td class="r data">     1251</td>
+</tr>
+<tr>
+<td class="l data">Mount Saint Mary College</td>
+<td class="l data">Private</td>
+<td class="r data">     2344</td>
+<td class="r data">     $65,628</td>
+<td class="r data">    $119,680</td>
+<td class="r data">     0.55</td>
+<td class="r data">      115</td>
+<td class="r data">     1281</td>
+</tr>
+<tr>
+<td class="l data">Niagara University *</td>
+<td class="l data">Private</td>
+<td class="r data">     3361</td>
+<td class="r data">     $69,700</td>
+<td class="r data">    $127,800</td>
+<td class="r data">     0.55</td>
+<td class="r data">      116</td>
+<td class="r data">     1289</td>
+</tr>
+<tr>
+<td class="l data">The King&#39;s College</td>
+<td class="l data">Private</td>
+<td class="r data">      684</td>
+<td class="r data">     $77,206</td>
+<td class="r data">    $141,600</td>
+<td class="r data">     0.55</td>
+<td class="r data">      117</td>
+<td class="r data">     1291</td>
+</tr>
+<tr>
+<td class="l data">Cazenovia College</td>
+<td class="l data">Private</td>
+<td class="r data">     1173</td>
+<td class="r data">     $72,666</td>
+<td class="r data">    $134,624</td>
+<td class="r data">     0.54</td>
+<td class="r data">      118</td>
+<td class="r data">     1309</td>
+</tr>
+<tr>
+<td class="l data">College of Mount Saint Vincent</td>
+<td class="l data">Private</td>
+<td class="r data">     1802</td>
+<td class="r data">     $72,162</td>
+<td class="r data">    $133,832</td>
+<td class="r data">     0.54</td>
+<td class="r data">      119</td>
+<td class="r data">     1310</td>
+</tr>
+<tr>
+<td class="l data">Iona College</td>
+<td class="l data">Private</td>
+<td class="r data">     3649</td>
+<td class="r data">     $81,130</td>
+<td class="r data">    $150,728</td>
+<td class="r data">     0.54</td>
+<td class="r data">      120</td>
+<td class="r data">     1313</td>
+</tr>
+<tr>
+<td class="l data">St John&#39;s University-New York</td>
+<td class="l data">Private</td>
+<td class="r data">    17861</td>
+<td class="r data">     $86,045</td>
+<td class="r data">    $160,788</td>
+<td class="r data">     0.54</td>
+<td class="r data">      121</td>
+<td class="r data">     1320</td>
+</tr>
+<tr>
+<td class="l data">Phillips School of Nursing at Mount Sinai Beth Israel</td>
+<td class="l data">Private</td>
+<td class="r data">      235</td>
+<td class="r data">     $67,863</td>
+<td class="r data">    $127,048</td>
+<td class="r data">     0.53</td>
+<td class="r data">      122</td>
+<td class="r data">     1324</td>
+</tr>
+<tr>
+<td class="l data">Adelphi University *</td>
+<td class="l data">Private</td>
+<td class="r data">     5768</td>
+<td class="r data">     $79,200</td>
+<td class="r data">    $148,680</td>
+<td class="r data">     0.53</td>
+<td class="r data">      123</td>
+<td class="r data">     1330</td>
+</tr>
+<tr>
+<td class="l data">Rochester Institute of Technology *</td>
+<td class="l data">Private</td>
+<td class="r data">    15217</td>
+<td class="r data">     $84,600</td>
+<td class="r data">    $160,272</td>
+<td class="r data">     0.53</td>
+<td class="r data">      124</td>
+<td class="r data">     1341</td>
+</tr>
+<tr>
+<td class="l data">Hofstra University *</td>
+<td class="l data">Private</td>
+<td class="r data">     7438</td>
+<td class="r data">     $92,700</td>
+<td class="r data">    $175,840</td>
+<td class="r data">     0.53</td>
+<td class="r data">      125</td>
+<td class="r data">     1344</td>
+</tr>
+<tr>
+<td class="l data">Rensselaer Polytechnic Institute *</td>
+<td class="l data">Private</td>
+<td class="r data">     6371</td>
+<td class="r data">    $110,000</td>
+<td class="r data">    $209,220</td>
+<td class="r data">     0.53</td>
+<td class="r data">      126</td>
+<td class="r data">     1347</td>
+</tr>
+<tr>
+<td class="l data">Keuka College</td>
+<td class="l data">Private</td>
+<td class="r data">     1940</td>
+<td class="r data">     $64,817</td>
+<td class="r data">    $123,784</td>
+<td class="r data">     0.52</td>
+<td class="r data">      127</td>
+<td class="r data">     1354</td>
+</tr>
+<tr>
+<td class="l data">Cornell University *</td>
+<td class="l data">Private</td>
+<td class="r data">    14774</td>
+<td class="r data">    $110,000</td>
+<td class="r data">    $211,412</td>
+<td class="r data">     0.52</td>
+<td class="r data">      128</td>
+<td class="r data">     1366</td>
+</tr>
+<tr>
+<td class="l data">Manhattan College</td>
+<td class="l data">Private</td>
+<td class="r data">     3727</td>
+<td class="r data">     $85,910</td>
+<td class="r data">    $165,648</td>
+<td class="r data">     0.52</td>
+<td class="r data">      129</td>
+<td class="r data">     1373</td>
+</tr>
+<tr>
+<td class="l data">Columbia University in the City of New York</td>
+<td class="l data">Private</td>
+<td class="r data">     8523</td>
+<td class="r data">    $107,107</td>
+<td class="r data">    $206,560</td>
+<td class="r data">     0.52</td>
+<td class="r data">      130</td>
+<td class="r data">     1374</td>
+</tr>
+<tr>
+<td class="l data">Marist College</td>
+<td class="l data">Private</td>
+<td class="r data">     6236</td>
+<td class="r data">     $76,063</td>
+<td class="r data">    $146,720</td>
+<td class="r data">     0.52</td>
+<td class="r data">      131</td>
+<td class="r data">     1375</td>
+</tr>
+<tr>
+<td class="l data">Nazareth College</td>
+<td class="l data">Private</td>
+<td class="r data">     2179</td>
+<td class="r data">     $68,887</td>
+<td class="r data">    $133,296</td>
+<td class="r data">     0.52</td>
+<td class="r data">      132</td>
+<td class="r data">     1386</td>
+</tr>
+<tr>
+<td class="l data">LIU Post</td>
+<td class="l data">Private</td>
+<td class="r data">     7021</td>
+<td class="r data">     $75,832</td>
+<td class="r data">    $147,912</td>
+<td class="r data">     0.51</td>
+<td class="r data">      133</td>
+<td class="r data">     1399</td>
+</tr>
+<tr>
+<td class="l data">Ithaca College *</td>
+<td class="l data">Private</td>
+<td class="r data">     6488</td>
+<td class="r data">     $87,400</td>
+<td class="r data">    $171,536</td>
+<td class="r data">     0.51</td>
+<td class="r data">      134</td>
+<td class="r data">     1408</td>
+</tr>
+<tr>
+<td class="l data">Wells College</td>
+<td class="l data">Private</td>
+<td class="r data">      516</td>
+<td class="r data">     $80,231</td>
+<td class="r data">    $158,400</td>
+<td class="r data">     0.51</td>
+<td class="r data">      135</td>
+<td class="r data">     1416</td>
+</tr>
+<tr>
+<td class="l data">LIM College</td>
+<td class="l data">Private</td>
+<td class="r data">     2005</td>
+<td class="r data">     $53,426</td>
+<td class="r data">    $105,580</td>
+<td class="r data">     0.51</td>
+<td class="r data">      136</td>
+<td class="r data">     1419</td>
+</tr>
+<tr>
+<td class="l data">Marymount Manhattan College</td>
+<td class="l data">Private</td>
+<td class="r data">     2223</td>
+<td class="r data">     $64,521</td>
+<td class="r data">    $127,800</td>
+<td class="r data">      0.5</td>
+<td class="r data">      137</td>
+<td class="r data">     1427</td>
+</tr>
+<tr>
+<td class="l data">LIU Brooklyn</td>
+<td class="l data">Private</td>
+<td class="r data">     4619</td>
+<td class="r data">     $74,485</td>
+<td class="r data">    $147,912</td>
+<td class="r data">      0.5</td>
+<td class="r data">      138</td>
+<td class="r data">     1430</td>
+</tr>
+<tr>
+<td class="l data">Colgate University *</td>
+<td class="l data">Private</td>
+<td class="r data">     3025</td>
+<td class="r data">    $108,000</td>
+<td class="r data">    $215,920</td>
+<td class="r data">      0.5</td>
+<td class="r data">      139</td>
+<td class="r data">     1440</td>
+</tr>
+<tr>
+<td class="l data">American Musical and Dramatic Academy</td>
+<td class="l data">Private</td>
+<td class="r data">     1853</td>
+<td class="r data">     $74,181</td>
+<td class="r data">    $149,480</td>
+<td class="r data">      0.5</td>
+<td class="r data">      140</td>
+<td class="r data">     1454</td>
+</tr>
+<tr>
+<td class="l data">Fordham University *</td>
+<td class="l data">Private</td>
+<td class="r data">    10137</td>
+<td class="r data">     $99,900</td>
+<td class="r data">    $202,404</td>
+<td class="r data">     0.49</td>
+<td class="r data">      141</td>
+<td class="r data">     1462</td>
+</tr>
+<tr>
+<td class="l data">New York School of Interior Design</td>
+<td class="l data">Private</td>
+<td class="r data">      528</td>
+<td class="r data">     $57,733</td>
+<td class="r data">    $117,160</td>
+<td class="r data">     0.49</td>
+<td class="r data">      142</td>
+<td class="r data">     1465</td>
+</tr>
+<tr>
+<td class="l data">University of Rochester</td>
+<td class="l data">Private</td>
+<td class="r data">     6905</td>
+<td class="r data">    $101,124</td>
+<td class="r data">    $208,080</td>
+<td class="r data">     0.49</td>
+<td class="r data">      143</td>
+<td class="r data">     1482</td>
+</tr>
+<tr>
+<td class="l data">School of Visual Arts</td>
+<td class="l data">Private</td>
+<td class="r data">     4058</td>
+<td class="r data">     $73,430</td>
+<td class="r data">    $152,000</td>
+<td class="r data">     0.48</td>
+<td class="r data">      144</td>
+<td class="r data">     1493</td>
+</tr>
+<tr>
+<td class="l data">New York University *</td>
+<td class="l data">Private</td>
+<td class="r data">    30252</td>
+<td class="r data">     $95,600</td>
+<td class="r data">    $201,856</td>
+<td class="r data">     0.47</td>
+<td class="r data">      145</td>
+<td class="r data">     1524</td>
+</tr>
+<tr>
+<td class="l data">Manhattan School of Music</td>
+<td class="l data">Private</td>
+<td class="r data">      451</td>
+<td class="r data">     $83,321</td>
+<td class="r data">    $178,400</td>
+<td class="r data">     0.47</td>
+<td class="r data">      146</td>
+<td class="r data">     1543</td>
+</tr>
+<tr>
+<td class="l data">Pace University-New York</td>
+<td class="l data">Private</td>
+<td class="r data">    10063</td>
+<td class="r data">     $81,245</td>
+<td class="r data">    $175,944</td>
+<td class="r data">     0.46</td>
+<td class="r data">      147</td>
+<td class="r data">     1562</td>
+</tr>
+<tr>
+<td class="l data">Syracuse University *</td>
+<td class="l data">Private</td>
+<td class="r data">    28199</td>
+<td class="r data">     $85,900</td>
+<td class="r data">    $187,020</td>
+<td class="r data">     0.46</td>
+<td class="r data">      148</td>
+<td class="r data">     1572</td>
+</tr>
+<tr>
+<td class="l data">Hartwick College</td>
+<td class="l data">Private</td>
+<td class="r data">     1435</td>
+<td class="r data">     $80,807</td>
+<td class="r data">    $176,536</td>
+<td class="r data">     0.46</td>
+<td class="r data">      149</td>
+<td class="r data">     1577</td>
+</tr>
+<tr>
+<td class="l data">Union College *</td>
+<td class="l data">Private</td>
+<td class="r data">     2214</td>
+<td class="r data">     $95,800</td>
+<td class="r data">    $213,960</td>
+<td class="r data">     0.45</td>
+<td class="r data">      150</td>
+<td class="r data">     1606</td>
+</tr>
+<tr>
+<td class="l data">Elmira College</td>
+<td class="l data">Private</td>
+<td class="r data">     1135</td>
+<td class="r data">     $73,932</td>
+<td class="r data">    $167,600</td>
+<td class="r data">     0.44</td>
+<td class="r data">      151</td>
+<td class="r data">     1621</td>
+</tr>
+<tr>
+<td class="l data">Wagner College</td>
+<td class="l data">Private</td>
+<td class="r data">     1858</td>
+<td class="r data">     $79,851</td>
+<td class="r data">    $181,520</td>
+<td class="r data">     0.44</td>
+<td class="r data">      152</td>
+<td class="r data">     1622</td>
+</tr>
+<tr>
+<td class="l data">Manhattanville College</td>
+<td class="l data">Private</td>
+<td class="r data">     1802</td>
+<td class="r data">     $65,858</td>
+<td class="r data">    $151,640</td>
+<td class="r data">     0.43</td>
+<td class="r data">      153</td>
+<td class="r data">     1631</td>
+</tr>
+<tr>
+<td class="l data">Vassar College *</td>
+<td class="l data">Private</td>
+<td class="r data">     2572</td>
+<td class="r data">     $94,600</td>
+<td class="r data">    $220,840</td>
+<td class="r data">     0.43</td>
+<td class="r data">      154</td>
+<td class="r data">     1633</td>
+</tr>
+<tr>
+<td class="l data">Bard College</td>
+<td class="l data">Private</td>
+<td class="r data">     2101</td>
+<td class="r data">     $90,242</td>
+<td class="r data">    $211,624</td>
+<td class="r data">     0.43</td>
+<td class="r data">      155</td>
+<td class="r data">     1639</td>
+</tr>
+<tr>
+<td class="l data">St Lawrence University</td>
+<td class="l data">Private</td>
+<td class="r data">     2468</td>
+<td class="r data">     $88,583</td>
+<td class="r data">    $211,960</td>
+<td class="r data">     0.42</td>
+<td class="r data">      156</td>
+<td class="r data">     1653</td>
+</tr>
+<tr>
+<td class="l data">Hobart William Smith Colleges</td>
+<td class="l data">Private</td>
+<td class="r data">     2295</td>
+<td class="r data">     $87,145</td>
+<td class="r data">    $214,100</td>
+<td class="r data">     0.41</td>
+<td class="r data">      157</td>
+<td class="r data">     1668</td>
+</tr>
+<tr>
+<td class="l data">The College of New Rochelle</td>
+<td class="l data">Private</td>
+<td class="r data">     3510</td>
+<td class="r data">     $59,104</td>
+<td class="r data">    $146,472</td>
+<td class="r data">      0.4</td>
+<td class="r data">      158</td>
+<td class="r data">     1672</td>
+</tr>
+<tr>
+<td class="l data">Hamilton College *</td>
+<td class="l data">Private</td>
+<td class="r data">     2043</td>
+<td class="r data">     $83,700</td>
+<td class="r data">    $211,080</td>
+<td class="r data">      0.4</td>
+<td class="r data">      159</td>
+<td class="r data">     1679</td>
+</tr>
+<tr>
+<td class="l data">Jewish Theological Seminary of America</td>
+<td class="l data">Private</td>
+<td class="r data">      158</td>
+<td class="r data">     $84,523</td>
+<td class="r data">    $218,736</td>
+<td class="r data">     0.39</td>
+<td class="r data">      160</td>
+<td class="r data">     1687</td>
+</tr>
+<tr>
+<td class="l data">Pratt Institute-Main</td>
+<td class="l data">Private</td>
+<td class="r data">     4050</td>
+<td class="r data">     $76,768</td>
+<td class="r data">    $200,152</td>
+<td class="r data">     0.38</td>
+<td class="r data">      161</td>
+<td class="r data">     1691</td>
+</tr>
+<tr>
+<td class="l data">Sarah Lawrence College</td>
+<td class="l data">Private</td>
+<td class="r data">     1470</td>
+<td class="r data">     $82,409</td>
+<td class="r data">    $216,040</td>
+<td class="r data">     0.38</td>
+<td class="r data">      162</td>
+<td class="r data">     1693</td>
+</tr>
+<tr>
+<td class="l data">The New School</td>
+<td class="l data">Private</td>
+<td class="r data">     8911</td>
+<td class="r data">     $71,496</td>
+<td class="r data">    $189,404</td>
+<td class="r data">     0.38</td>
+<td class="r data">      163</td>
+<td class="r data">     1699</td>
+</tr>
+<tr>
+<td class="l data">Barnard College</td>
+<td class="l data">Private</td>
+<td class="r data">     2668</td>
+<td class="r data">     $79,451</td>
+<td class="r data">    $210,648</td>
+<td class="r data">     0.38</td>
+<td class="r data">      164</td>
+<td class="r data">     1700</td>
+</tr>
+<tr>
+<td class="l data">Skidmore College *</td>
+<td class="l data">Private</td>
+<td class="r data">     2835</td>
+<td class="r data">     $74,600</td>
+<td class="r data">    $209,784</td>
+<td class="r data">     0.36</td>
+<td class="r data">      165</td>
+<td class="r data">     1705</td>
+</tr>
+<tr>
+<td class="c linecontent" colspan="8">*&nbsp;An&nbsp;Instition&nbsp;thats&nbsp;Ten&nbsp;Year&nbsp;Median&nbsp;Salary&nbsp;was&nbsp;collected&nbsp;from&nbsp;a&nbsp;WSJ&nbsp;Study<br><a href='../InStateMap.html'>Back to In State Map</a><br><a href='../ValueType.html'>Back to Main Page</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

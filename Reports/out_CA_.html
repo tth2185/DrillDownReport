@@ -1,0 +1,2848 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Out of State Value Report for Institutions in California          </td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c header" scope="col">School Name</th>
+<th class="c header" scope="col">Institution Type</th>
+<th class="c header" scope="col">Total Students</th>
+<th class="c header" scope="col">Ten Year Median Salary</th>
+<th class="c header" scope="col">Out of State Tuition (4 years)</th>
+<th class="c header" scope="col">Out of State Value</th>
+<th class="c header" scope="col">Ranking Within State</th>
+<th class="c header" scope="col">National Ranking</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data">Grace Mission University</td>
+<td class="l data">Private</td>
+<td class="r data">      113</td>
+<td class="r data">     $83,990</td>
+<td class="r data">     $11,400</td>
+<td class="r data">     7.37</td>
+<td class="r data">        1</td>
+<td class="r data">        4</td>
+</tr>
+<tr>
+<td class="l data">California Christian College</td>
+<td class="l data">Private</td>
+<td class="r data">       21</td>
+<td class="r data">     $89,054</td>
+<td class="r data">     $37,320</td>
+<td class="r data">     2.39</td>
+<td class="r data">        2</td>
+<td class="r data">       52</td>
+</tr>
+<tr>
+<td class="l data">Trident University International</td>
+<td class="l data">Private</td>
+<td class="r data">     6903</td>
+<td class="r data">     $73,546</td>
+<td class="r data">     $36,960</td>
+<td class="r data">     1.99</td>
+<td class="r data">        3</td>
+<td class="r data">       84</td>
+</tr>
+<tr>
+<td class="l data">Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary</td>
+<td class="l data">Private</td>
+<td class="r data">      235</td>
+<td class="r data">    $104,411</td>
+<td class="r data">     $58,800</td>
+<td class="r data">     1.78</td>
+<td class="r data">        4</td>
+<td class="r data">       98</td>
+</tr>
+<tr>
+<td class="l data">Southern California Institute of Technology</td>
+<td class="l data">Private</td>
+<td class="r data">      907</td>
+<td class="r data">    $102,767</td>
+<td class="r data">     $69,340</td>
+<td class="r data">     1.48</td>
+<td class="r data">        5</td>
+<td class="r data">      132</td>
+</tr>
+<tr>
+<td class="l data">Shasta Bible College and Graduate School</td>
+<td class="l data">Private</td>
+<td class="r data">       56</td>
+<td class="r data">     $70,493</td>
+<td class="r data">     $48,240</td>
+<td class="r data">     1.46</td>
+<td class="r data">        6</td>
+<td class="r data">      140</td>
+</tr>
+<tr>
+<td class="l data">Charles R Drew University of Medicine and Science</td>
+<td class="l data">Private</td>
+<td class="r data">      163</td>
+<td class="r data">     $71,785</td>
+<td class="r data">     $49,196</td>
+<td class="r data">     1.46</td>
+<td class="r data">        7</td>
+<td class="r data">      141</td>
+</tr>
+<tr>
+<td class="l data">Mt Sierra College</td>
+<td class="l data">Private</td>
+<td class="r data">      361</td>
+<td class="r data">     $89,523</td>
+<td class="r data">     $62,752</td>
+<td class="r data">     1.43</td>
+<td class="r data">        8</td>
+<td class="r data">      152</td>
+</tr>
+<tr>
+<td class="l data">Minerva Schools at Keck Graduate Institute</td>
+<td class="l data">Private</td>
+<td class="r data">      281</td>
+<td class="r data">     $71,025</td>
+<td class="r data">     $52,600</td>
+<td class="r data">     1.35</td>
+<td class="r data">        9</td>
+<td class="r data">      168</td>
+</tr>
+<tr>
+<td class="l data">California State University Maritime Academy</td>
+<td class="l data">Public</td>
+<td class="r data">     1181</td>
+<td class="r data">    $100,135</td>
+<td class="r data">     $75,744</td>
+<td class="r data">     1.32</td>
+<td class="r data">       10</td>
+<td class="r data">      174</td>
+</tr>
+<tr>
+<td class="l data">Brandman University</td>
+<td class="l data">Private</td>
+<td class="r data">     5165</td>
+<td class="r data">     $65,080</td>
+<td class="r data">     $49,440</td>
+<td class="r data">     1.32</td>
+<td class="r data">       11</td>
+<td class="r data">      176</td>
+</tr>
+<tr>
+<td class="l data">DeVry University-California</td>
+<td class="l data">Private</td>
+<td class="r data">     5338</td>
+<td class="r data">     $78,938</td>
+<td class="r data">     $60,800</td>
+<td class="r data">      1.3</td>
+<td class="r data">       12</td>
+<td class="r data">      184</td>
+</tr>
+<tr>
+<td class="l data">San Jose State University *</td>
+<td class="l data">Public</td>
+<td class="r data">    27394</td>
+<td class="r data">     $95,600</td>
+<td class="r data">     $78,404</td>
+<td class="r data">     1.22</td>
+<td class="r data">       13</td>
+<td class="r data">      208</td>
+</tr>
+<tr>
+<td class="l data">Life Pacific College</td>
+<td class="l data">Private</td>
+<td class="r data">      620</td>
+<td class="r data">     $69,964</td>
+<td class="r data">     $59,536</td>
+<td class="r data">     1.18</td>
+<td class="r data">       14</td>
+<td class="r data">      230</td>
+</tr>
+<tr>
+<td class="l data">California State University-Fullerton *</td>
+<td class="l data">Public</td>
+<td class="r data">    38279</td>
+<td class="r data">     $87,000</td>
+<td class="r data">     $74,920</td>
+<td class="r data">     1.16</td>
+<td class="r data">       15</td>
+<td class="r data">      240</td>
+</tr>
+<tr>
+<td class="l data">California State University-Chico *</td>
+<td class="l data">Public</td>
+<td class="r data">    17732</td>
+<td class="r data">     $88,100</td>
+<td class="r data">     $76,912</td>
+<td class="r data">     1.15</td>
+<td class="r data">       16</td>
+<td class="r data">      247</td>
+</tr>
+<tr>
+<td class="l data">California State Polytechnic University-Pomona</td>
+<td class="l data">Public</td>
+<td class="r data">    24747</td>
+<td class="r data">     $88,000</td>
+<td class="r data">     $76,876</td>
+<td class="r data">     1.14</td>
+<td class="r data">       17</td>
+<td class="r data">      248</td>
+</tr>
+<tr>
+<td class="l data">Cogswell College</td>
+<td class="l data">Private</td>
+<td class="r data">      740</td>
+<td class="r data">     $89,846</td>
+<td class="r data">     $78,592</td>
+<td class="r data">     1.14</td>
+<td class="r data">       18</td>
+<td class="r data">      251</td>
+</tr>
+<tr>
+<td class="l data">California State University-Long Beach *</td>
+<td class="l data">Public</td>
+<td class="r data">    34415</td>
+<td class="r data">     $84,700</td>
+<td class="r data">     $74,440</td>
+<td class="r data">     1.14</td>
+<td class="r data">       19</td>
+<td class="r data">      253</td>
+</tr>
+<tr>
+<td class="l data">San Francisco State University *</td>
+<td class="l data">Public</td>
+<td class="r data">    29485</td>
+<td class="r data">     $86,400</td>
+<td class="r data">     $76,536</td>
+<td class="r data">     1.13</td>
+<td class="r data">       20</td>
+<td class="r data">      262</td>
+</tr>
+<tr>
+<td class="l data">California State University-East Bay *</td>
+<td class="l data">Public</td>
+<td class="r data">    14691</td>
+<td class="r data">     $84,300</td>
+<td class="r data">     $74,856</td>
+<td class="r data">     1.13</td>
+<td class="r data">       21</td>
+<td class="r data">      265</td>
+</tr>
+<tr>
+<td class="l data">San Diego State University *</td>
+<td class="l data">Public</td>
+<td class="r data">    31609</td>
+<td class="r data">     $85,200</td>
+<td class="r data">     $77,360</td>
+<td class="r data">      1.1</td>
+<td class="r data">       22</td>
+<td class="r data">      285</td>
+</tr>
+<tr>
+<td class="l data">Alliant International University-San Diego</td>
+<td class="l data">Private</td>
+<td class="r data">     2111</td>
+<td class="r data">     $66,855</td>
+<td class="r data">     $61,368</td>
+<td class="r data">     1.09</td>
+<td class="r data">       23</td>
+<td class="r data">      297</td>
+</tr>
+<tr>
+<td class="l data">California State University-Los Angeles</td>
+<td class="l data">Public</td>
+<td class="r data">    24862</td>
+<td class="r data">     $80,018</td>
+<td class="r data">     $74,076</td>
+<td class="r data">     1.08</td>
+<td class="r data">       24</td>
+<td class="r data">      304</td>
+</tr>
+<tr>
+<td class="l data">California State University-Sacramento *</td>
+<td class="l data">Public</td>
+<td class="r data">    30445</td>
+<td class="r data">     $82,400</td>
+<td class="r data">     $76,336</td>
+<td class="r data">     1.08</td>
+<td class="r data">       25</td>
+<td class="r data">      305</td>
+</tr>
+<tr>
+<td class="l data">California State University-Fresno</td>
+<td class="l data">Public</td>
+<td class="r data">    23020</td>
+<td class="r data">     $79,304</td>
+<td class="r data">     $73,860</td>
+<td class="r data">     1.07</td>
+<td class="r data">       26</td>
+<td class="r data">      312</td>
+</tr>
+<tr>
+<td class="l data">California State University-Northridge *</td>
+<td class="l data">Public</td>
+<td class="r data">    37184</td>
+<td class="r data">     $80,400</td>
+<td class="r data">     $75,020</td>
+<td class="r data">     1.07</td>
+<td class="r data">       27</td>
+<td class="r data">      314</td>
+</tr>
+<tr>
+<td class="l data">California Jazz Conservatory</td>
+<td class="l data">Private</td>
+<td class="r data">       69</td>
+<td class="r data">     $78,102</td>
+<td class="r data">     $73,200</td>
+<td class="r data">     1.07</td>
+<td class="r data">       28</td>
+<td class="r data">      320</td>
+</tr>
+<tr>
+<td class="l data">The Chicago School of Professional Psychology at Los Angeles</td>
+<td class="l data">Private</td>
+<td class="r data">      220</td>
+<td class="r data">     $56,427</td>
+<td class="r data">     $54,120</td>
+<td class="r data">     1.04</td>
+<td class="r data">       29</td>
+<td class="r data">      350</td>
+</tr>
+<tr>
+<td class="l data">California State University-Dominguez Hills</td>
+<td class="l data">Public</td>
+<td class="r data">    13181</td>
+<td class="r data">     $75,205</td>
+<td class="r data">     $74,868</td>
+<td class="r data">        1</td>
+<td class="r data">       30</td>
+<td class="r data">      391</td>
+</tr>
+<tr>
+<td class="l data">California State University-San Bernardino</td>
+<td class="l data">Public</td>
+<td class="r data">    19244</td>
+<td class="r data">     $74,638</td>
+<td class="r data">     $75,060</td>
+<td class="r data">     0.99</td>
+<td class="r data">       31</td>
+<td class="r data">      401</td>
+</tr>
+<tr>
+<td class="l data">California Polytechnic State University-San Luis Obispo</td>
+<td class="l data">Public</td>
+<td class="r data">    21098</td>
+<td class="r data">     $83,668</td>
+<td class="r data">     $85,248</td>
+<td class="r data">     0.98</td>
+<td class="r data">       32</td>
+<td class="r data">      417</td>
+</tr>
+<tr>
+<td class="l data">California State University-Bakersfield</td>
+<td class="l data">Public</td>
+<td class="r data">     9769</td>
+<td class="r data">     $74,621</td>
+<td class="r data">     $76,108</td>
+<td class="r data">     0.98</td>
+<td class="r data">       33</td>
+<td class="r data">      418</td>
+</tr>
+<tr>
+<td class="l data">California State University-Monterey Bay</td>
+<td class="l data">Public</td>
+<td class="r data">     7250</td>
+<td class="r data">     $74,037</td>
+<td class="r data">     $75,692</td>
+<td class="r data">     0.98</td>
+<td class="r data">       34</td>
+<td class="r data">      422</td>
+</tr>
+<tr>
+<td class="l data">California State University-San Marcos</td>
+<td class="l data">Public</td>
+<td class="r data">    12996</td>
+<td class="r data">     $75,620</td>
+<td class="r data">     $78,132</td>
+<td class="r data">     0.97</td>
+<td class="r data">       35</td>
+<td class="r data">      439</td>
+</tr>
+<tr>
+<td class="l data">California State University-Channel Islands</td>
+<td class="l data">Public</td>
+<td class="r data">     6851</td>
+<td class="r data">     $70,894</td>
+<td class="r data">     $74,788</td>
+<td class="r data">     0.95</td>
+<td class="r data">       36</td>
+<td class="r data">      472</td>
+</tr>
+<tr>
+<td class="l data">California State University-Stanislaus *</td>
+<td class="l data">Public</td>
+<td class="r data">     9299</td>
+<td class="r data">     $71,400</td>
+<td class="r data">     $75,672</td>
+<td class="r data">     0.94</td>
+<td class="r data">       37</td>
+<td class="r data">      478</td>
+</tr>
+<tr>
+<td class="l data">Humboldt State University *</td>
+<td class="l data">Public</td>
+<td class="r data">     8602</td>
+<td class="r data">     $71,300</td>
+<td class="r data">     $77,492</td>
+<td class="r data">     0.92</td>
+<td class="r data">       38</td>
+<td class="r data">      509</td>
+</tr>
+<tr>
+<td class="l data">Sonoma State University</td>
+<td class="l data">Public</td>
+<td class="r data">     9244</td>
+<td class="r data">     $70,429</td>
+<td class="r data">     $78,416</td>
+<td class="r data">      0.9</td>
+<td class="r data">       39</td>
+<td class="r data">      529</td>
+</tr>
+<tr>
+<td class="l data">American University of Health Sciences</td>
+<td class="l data">Private</td>
+<td class="r data">      325</td>
+<td class="r data">     $73,474</td>
+<td class="r data">     $84,232</td>
+<td class="r data">     0.87</td>
+<td class="r data">       40</td>
+<td class="r data">      573</td>
+</tr>
+<tr>
+<td class="l data">San Diego Christian College</td>
+<td class="l data">Private</td>
+<td class="r data">      832</td>
+<td class="r data">     $76,072</td>
+<td class="r data">     $88,376</td>
+<td class="r data">     0.86</td>
+<td class="r data">       41</td>
+<td class="r data">      592</td>
+</tr>
+<tr>
+<td class="l data">Chamberlain University-California</td>
+<td class="l data">Private</td>
+<td class="r data">      124</td>
+<td class="r data">     $63,253</td>
+<td class="r data">     $78,000</td>
+<td class="r data">     0.81</td>
+<td class="r data">       42</td>
+<td class="r data">      666</td>
+</tr>
+<tr>
+<td class="l data">Columbia College Hollywood</td>
+<td class="l data">Private</td>
+<td class="r data">      502</td>
+<td class="r data">     $78,310</td>
+<td class="r data">     $97,980</td>
+<td class="r data">      0.8</td>
+<td class="r data">       43</td>
+<td class="r data">      688</td>
+</tr>
+<tr>
+<td class="l data">Musicians Institute</td>
+<td class="l data">Private</td>
+<td class="r data">     1416</td>
+<td class="r data">     $76,298</td>
+<td class="r data">     $96,120</td>
+<td class="r data">     0.79</td>
+<td class="r data">       44</td>
+<td class="r data">      699</td>
+</tr>
+<tr>
+<td class="l data">John Paul the Great Catholic University</td>
+<td class="l data">Private</td>
+<td class="r data">      279</td>
+<td class="r data">     $74,551</td>
+<td class="r data">     $99,600</td>
+<td class="r data">     0.75</td>
+<td class="r data">       45</td>
+<td class="r data">      765</td>
+</tr>
+<tr>
+<td class="l data">Newschool of Architecture and Design</td>
+<td class="l data">Private</td>
+<td class="r data">      460</td>
+<td class="r data">     $76,625</td>
+<td class="r data">    $105,852</td>
+<td class="r data">     0.72</td>
+<td class="r data">       46</td>
+<td class="r data">      797</td>
+</tr>
+<tr>
+<td class="l data">Thomas Aquinas College *</td>
+<td class="l data">Private</td>
+<td class="r data">      393</td>
+<td class="r data">     $67,500</td>
+<td class="r data">     $98,000</td>
+<td class="r data">     0.69</td>
+<td class="r data">       47</td>
+<td class="r data">      876</td>
+</tr>
+<tr>
+<td class="l data">Pacific Union College</td>
+<td class="l data">Private</td>
+<td class="r data">     1709</td>
+<td class="r data">     $80,064</td>
+<td class="r data">    $117,876</td>
+<td class="r data">     0.68</td>
+<td class="r data">       48</td>
+<td class="r data">      899</td>
+</tr>
+<tr>
+<td class="l data">Soka University of America</td>
+<td class="l data">Private</td>
+<td class="r data">      421</td>
+<td class="r data">     $86,080</td>
+<td class="r data">    $127,104</td>
+<td class="r data">     0.68</td>
+<td class="r data">       49</td>
+<td class="r data">      905</td>
+</tr>
+<tr>
+<td class="l data">University of California-Berkeley *</td>
+<td class="l data">Public</td>
+<td class="r data">    31133</td>
+<td class="r data">    $112,000</td>
+<td class="r data">    $168,736</td>
+<td class="r data">     0.66</td>
+<td class="r data">       50</td>
+<td class="r data">      934</td>
+</tr>
+<tr>
+<td class="l data">Stanford University *</td>
+<td class="l data">Private</td>
+<td class="r data">     8402</td>
+<td class="r data">    $129,000</td>
+<td class="r data">    $198,468</td>
+<td class="r data">     0.65</td>
+<td class="r data">       51</td>
+<td class="r data">      966</td>
+</tr>
+<tr>
+<td class="l data">Providence Christian College</td>
+<td class="l data">Private</td>
+<td class="r data">      171</td>
+<td class="r data">     $76,096</td>
+<td class="r data">    $117,488</td>
+<td class="r data">     0.65</td>
+<td class="r data">       52</td>
+<td class="r data">      972</td>
+</tr>
+<tr>
+<td class="l data">La Sierra University</td>
+<td class="l data">Private</td>
+<td class="r data">     2197</td>
+<td class="r data">     $80,878</td>
+<td class="r data">    $128,520</td>
+<td class="r data">     0.63</td>
+<td class="r data">       53</td>
+<td class="r data">     1023</td>
+</tr>
+<tr>
+<td class="l data">Hope International University</td>
+<td class="l data">Private</td>
+<td class="r data">     1488</td>
+<td class="r data">     $78,691</td>
+<td class="r data">    $127,200</td>
+<td class="r data">     0.62</td>
+<td class="r data">       54</td>
+<td class="r data">     1050</td>
+</tr>
+<tr>
+<td class="l data">California Institute of Technology *</td>
+<td class="l data">Private</td>
+<td class="r data">     1002</td>
+<td class="r data">    $123,000</td>
+<td class="r data">    $199,632</td>
+<td class="r data">     0.62</td>
+<td class="r data">       55</td>
+<td class="r data">     1060</td>
+</tr>
+<tr>
+<td class="l data">Laguna College of Art and Design</td>
+<td class="l data">Private</td>
+<td class="r data">      670</td>
+<td class="r data">     $73,131</td>
+<td class="r data">    $119,200</td>
+<td class="r data">     0.61</td>
+<td class="r data">       56</td>
+<td class="r data">     1062</td>
+</tr>
+<tr>
+<td class="l data">University of California-Los Angeles</td>
+<td class="l data">Public</td>
+<td class="r data">    33148</td>
+<td class="r data">    $101,003</td>
+<td class="r data">    $165,100</td>
+<td class="r data">     0.61</td>
+<td class="r data">       57</td>
+<td class="r data">     1068</td>
+</tr>
+<tr>
+<td class="l data">Beverly Hills Design Institute</td>
+<td class="l data">Private</td>
+<td class="r data">       36</td>
+<td class="r data">     $55,954</td>
+<td class="r data">     $92,880</td>
+<td class="r data">      0.6</td>
+<td class="r data">       58</td>
+<td class="r data">     1100</td>
+</tr>
+<tr>
+<td class="l data">University of California-San Diego *</td>
+<td class="l data">Public</td>
+<td class="r data">    29613</td>
+<td class="r data">    $101,000</td>
+<td class="r data">    $168,128</td>
+<td class="r data">      0.6</td>
+<td class="r data">       59</td>
+<td class="r data">     1107</td>
+</tr>
+<tr>
+<td class="l data">University of California-Davis *</td>
+<td class="l data">Public</td>
+<td class="r data">    31437</td>
+<td class="r data">     $99,600</td>
+<td class="r data">    $169,732</td>
+<td class="r data">     0.59</td>
+<td class="r data">       60</td>
+<td class="r data">     1153</td>
+</tr>
+<tr>
+<td class="l data">William Jessup University</td>
+<td class="l data">Private</td>
+<td class="r data">     1391</td>
+<td class="r data">     $71,658</td>
+<td class="r data">    $122,200</td>
+<td class="r data">     0.59</td>
+<td class="r data">       61</td>
+<td class="r data">     1154</td>
+</tr>
+<tr>
+<td class="l data">Simpson University</td>
+<td class="l data">Private</td>
+<td class="r data">      933</td>
+<td class="r data">     $64,783</td>
+<td class="r data">    $110,800</td>
+<td class="r data">     0.58</td>
+<td class="r data">       62</td>
+<td class="r data">     1159</td>
+</tr>
+<tr>
+<td class="l data">Design Institute of San Diego</td>
+<td class="l data">Private</td>
+<td class="r data">      200</td>
+<td class="r data">     $51,814</td>
+<td class="r data">     $88,692</td>
+<td class="r data">     0.58</td>
+<td class="r data">       63</td>
+<td class="r data">     1161</td>
+</tr>
+<tr>
+<td class="l data">The Master&#39;s University and Seminary</td>
+<td class="l data">Private</td>
+<td class="r data">     1551</td>
+<td class="r data">     $76,788</td>
+<td class="r data">    $132,080</td>
+<td class="r data">     0.58</td>
+<td class="r data">       64</td>
+<td class="r data">     1168</td>
+</tr>
+<tr>
+<td class="l data">University of California-Irvine *</td>
+<td class="l data">Public</td>
+<td class="r data">    28947</td>
+<td class="r data">     $96,700</td>
+<td class="r data">    $167,008</td>
+<td class="r data">     0.58</td>
+<td class="r data">       65</td>
+<td class="r data">     1175</td>
+</tr>
+<tr>
+<td class="l data">Menlo College</td>
+<td class="l data">Private</td>
+<td class="r data">      824</td>
+<td class="r data">     $95,540</td>
+<td class="r data">    $165,400</td>
+<td class="r data">     0.58</td>
+<td class="r data">       66</td>
+<td class="r data">     1180</td>
+</tr>
+<tr>
+<td class="l data">The Colburn Conservatory of Music</td>
+<td class="l data">Private</td>
+<td class="r data">       61</td>
+<td class="r data">    $113,836</td>
+<td class="r data">    $197,400</td>
+<td class="r data">     0.58</td>
+<td class="r data">       67</td>
+<td class="r data">     1183</td>
+</tr>
+<tr>
+<td class="l data">Vanguard University of Southern California</td>
+<td class="l data">Private</td>
+<td class="r data">     2394</td>
+<td class="r data">     $74,387</td>
+<td class="r data">    $129,720</td>
+<td class="r data">     0.57</td>
+<td class="r data">       68</td>
+<td class="r data">     1189</td>
+</tr>
+<tr>
+<td class="l data">University of California-Santa Barbara *</td>
+<td class="l data">Public</td>
+<td class="r data">    22910</td>
+<td class="r data">     $95,000</td>
+<td class="r data">    $169,860</td>
+<td class="r data">     0.56</td>
+<td class="r data">       69</td>
+<td class="r data">     1232</td>
+</tr>
+<tr>
+<td class="l data">Harvey Mudd College *</td>
+<td class="l data">Private</td>
+<td class="r data">      847</td>
+<td class="r data">    $122,000</td>
+<td class="r data">    $218,544</td>
+<td class="r data">     0.56</td>
+<td class="r data">       70</td>
+<td class="r data">     1235</td>
+</tr>
+<tr>
+<td class="l data">University of California-Merced</td>
+<td class="l data">Public</td>
+<td class="r data">     7171</td>
+<td class="r data">     $92,231</td>
+<td class="r data">    $166,448</td>
+<td class="r data">     0.55</td>
+<td class="r data">       71</td>
+<td class="r data">     1245</td>
+</tr>
+<tr>
+<td class="l data">University of the Pacific</td>
+<td class="l data">Private</td>
+<td class="r data">     3639</td>
+<td class="r data">    $102,596</td>
+<td class="r data">    $185,384</td>
+<td class="r data">     0.55</td>
+<td class="r data">       72</td>
+<td class="r data">     1249</td>
+</tr>
+<tr>
+<td class="l data">California Baptist University</td>
+<td class="l data">Private</td>
+<td class="r data">     8140</td>
+<td class="r data">     $71,175</td>
+<td class="r data">    $129,024</td>
+<td class="r data">     0.55</td>
+<td class="r data">       73</td>
+<td class="r data">     1257</td>
+</tr>
+<tr>
+<td class="l data">Fresno Pacific University</td>
+<td class="l data">Private</td>
+<td class="r data">     3278</td>
+<td class="r data">     $67,050</td>
+<td class="r data">    $122,032</td>
+<td class="r data">     0.55</td>
+<td class="r data">       74</td>
+<td class="r data">     1263</td>
+</tr>
+<tr>
+<td class="l data">American Jewish University</td>
+<td class="l data">Private</td>
+<td class="r data">       76</td>
+<td class="r data">     $66,867</td>
+<td class="r data">    $123,752</td>
+<td class="r data">     0.54</td>
+<td class="r data">       75</td>
+<td class="r data">     1295</td>
+</tr>
+<tr>
+<td class="l data">Concordia University-Irvine</td>
+<td class="l data">Private</td>
+<td class="r data">     2112</td>
+<td class="r data">     $73,701</td>
+<td class="r data">    $136,400</td>
+<td class="r data">     0.54</td>
+<td class="r data">       76</td>
+<td class="r data">     1296</td>
+</tr>
+<tr>
+<td class="l data">Notre Dame de Namur University</td>
+<td class="l data">Private</td>
+<td class="r data">     1367</td>
+<td class="r data">     $73,881</td>
+<td class="r data">    $136,784</td>
+<td class="r data">     0.54</td>
+<td class="r data">       77</td>
+<td class="r data">     1298</td>
+</tr>
+<tr>
+<td class="l data">Holy Names University</td>
+<td class="l data">Private</td>
+<td class="r data">      609</td>
+<td class="r data">     $80,227</td>
+<td class="r data">    $152,752</td>
+<td class="r data">     0.53</td>
+<td class="r data">       78</td>
+<td class="r data">     1341</td>
+</tr>
+<tr>
+<td class="l data">Point Loma Nazarene University</td>
+<td class="l data">Private</td>
+<td class="r data">     3313</td>
+<td class="r data">     $72,554</td>
+<td class="r data">    $138,400</td>
+<td class="r data">     0.52</td>
+<td class="r data">       79</td>
+<td class="r data">     1344</td>
+</tr>
+<tr>
+<td class="l data">Azusa Pacific University</td>
+<td class="l data">Private</td>
+<td class="r data">     6263</td>
+<td class="r data">     $77,049</td>
+<td class="r data">    $150,024</td>
+<td class="r data">     0.51</td>
+<td class="r data">       80</td>
+<td class="r data">     1388</td>
+</tr>
+<tr>
+<td class="l data">Woodbury University</td>
+<td class="l data">Private</td>
+<td class="r data">     1380</td>
+<td class="r data">     $78,935</td>
+<td class="r data">    $153,840</td>
+<td class="r data">     0.51</td>
+<td class="r data">       81</td>
+<td class="r data">     1390</td>
+</tr>
+<tr>
+<td class="l data">Biola University</td>
+<td class="l data">Private</td>
+<td class="r data">     4256</td>
+<td class="r data">     $78,363</td>
+<td class="r data">    $153,792</td>
+<td class="r data">     0.51</td>
+<td class="r data">       82</td>
+<td class="r data">     1401</td>
+</tr>
+<tr>
+<td class="l data">Art Center College of Design</td>
+<td class="l data">Private</td>
+<td class="r data">     2606</td>
+<td class="r data">     $84,977</td>
+<td class="r data">    $168,032</td>
+<td class="r data">     0.51</td>
+<td class="r data">       83</td>
+<td class="r data">     1417</td>
+</tr>
+<tr>
+<td class="l data">West Coast University-Orange County</td>
+<td class="l data">Private</td>
+<td class="r data">     2646</td>
+<td class="r data">     $69,616</td>
+<td class="r data">    $138,540</td>
+<td class="r data">      0.5</td>
+<td class="r data">       84</td>
+<td class="r data">     1428</td>
+</tr>
+<tr>
+<td class="l data">University of California-Santa Cruz *</td>
+<td class="l data">Public</td>
+<td class="r data">    17925</td>
+<td class="r data">     $84,100</td>
+<td class="r data">    $168,136</td>
+<td class="r data">      0.5</td>
+<td class="r data">       85</td>
+<td class="r data">     1434</td>
+</tr>
+<tr>
+<td class="l data">Occidental College *</td>
+<td class="l data">Private</td>
+<td class="r data">     2123</td>
+<td class="r data">    $105,000</td>
+<td class="r data">    $211,352</td>
+<td class="r data">      0.5</td>
+<td class="r data">       86</td>
+<td class="r data">     1448</td>
+</tr>
+<tr>
+<td class="l data">Pomona College *</td>
+<td class="l data">Private</td>
+<td class="r data">     1665</td>
+<td class="r data">    $101,000</td>
+<td class="r data">    $204,300</td>
+<td class="r data">     0.49</td>
+<td class="r data">       87</td>
+<td class="r data">     1456</td>
+</tr>
+<tr>
+<td class="l data">California Lutheran University</td>
+<td class="l data">Private</td>
+<td class="r data">     3207</td>
+<td class="r data">     $81,405</td>
+<td class="r data">    $165,452</td>
+<td class="r data">     0.49</td>
+<td class="r data">       88</td>
+<td class="r data">     1469</td>
+</tr>
+<tr>
+<td class="l data">University of California-Riverside *</td>
+<td class="l data">Public</td>
+<td class="r data">    21017</td>
+<td class="r data">     $81,300</td>
+<td class="r data">    $167,724</td>
+<td class="r data">     0.48</td>
+<td class="r data">       89</td>
+<td class="r data">     1482</td>
+</tr>
+<tr>
+<td class="l data">West Coast University-Los Angeles</td>
+<td class="l data">Private</td>
+<td class="r data">     2122</td>
+<td class="r data">     $67,033</td>
+<td class="r data">    $138,540</td>
+<td class="r data">     0.48</td>
+<td class="r data">       90</td>
+<td class="r data">     1486</td>
+</tr>
+<tr>
+<td class="l data">West Coast University-Ontario</td>
+<td class="l data">Private</td>
+<td class="r data">     1649</td>
+<td class="r data">     $66,951</td>
+<td class="r data">    $138,540</td>
+<td class="r data">     0.48</td>
+<td class="r data">       91</td>
+<td class="r data">     1489</td>
+</tr>
+<tr>
+<td class="l data">San Francisco Conservatory of Music</td>
+<td class="l data">Private</td>
+<td class="r data">      196</td>
+<td class="r data">     $86,592</td>
+<td class="r data">    $179,240</td>
+<td class="r data">     0.48</td>
+<td class="r data">       92</td>
+<td class="r data">     1490</td>
+</tr>
+<tr>
+<td class="l data">University of San Francisco</td>
+<td class="l data">Private</td>
+<td class="r data">     7495</td>
+<td class="r data">     $89,008</td>
+<td class="r data">    $185,000</td>
+<td class="r data">     0.48</td>
+<td class="r data">       93</td>
+<td class="r data">     1504</td>
+</tr>
+<tr>
+<td class="l data">University of San Diego</td>
+<td class="l data">Private</td>
+<td class="r data">     6177</td>
+<td class="r data">     $91,770</td>
+<td class="r data">    $190,832</td>
+<td class="r data">     0.48</td>
+<td class="r data">       94</td>
+<td class="r data">     1506</td>
+</tr>
+<tr>
+<td class="l data">Claremont McKenna College</td>
+<td class="l data">Private</td>
+<td class="r data">     1364</td>
+<td class="r data">     $99,734</td>
+<td class="r data">    $211,300</td>
+<td class="r data">     0.47</td>
+<td class="r data">       95</td>
+<td class="r data">     1528</td>
+</tr>
+<tr>
+<td class="l data">FIDM-Fashion Institute of Design &amp; Merchandising-San Francisco</td>
+<td class="l data">Private</td>
+<td class="r data">      406</td>
+<td class="r data">     $60,214</td>
+<td class="r data">    $129,200</td>
+<td class="r data">     0.47</td>
+<td class="r data">       96</td>
+<td class="r data">     1544</td>
+</tr>
+<tr>
+<td class="l data">University of La Verne</td>
+<td class="l data">Private</td>
+<td class="r data">     6653</td>
+<td class="r data">     $77,040</td>
+<td class="r data">    $165,800</td>
+<td class="r data">     0.46</td>
+<td class="r data">       97</td>
+<td class="r data">     1546</td>
+</tr>
+<tr>
+<td class="l data">Whittier College</td>
+<td class="l data">Private</td>
+<td class="r data">     1660</td>
+<td class="r data">     $85,649</td>
+<td class="r data">    $184,440</td>
+<td class="r data">     0.46</td>
+<td class="r data">       98</td>
+<td class="r data">     1548</td>
+</tr>
+<tr>
+<td class="l data">Pepperdine University</td>
+<td class="l data">Private</td>
+<td class="r data">     3803</td>
+<td class="r data">     $95,742</td>
+<td class="r data">    $207,968</td>
+<td class="r data">     0.46</td>
+<td class="r data">       99</td>
+<td class="r data">     1566</td>
+</tr>
+<tr>
+<td class="l data">Pitzer College</td>
+<td class="l data">Private</td>
+<td class="r data">     1087</td>
+<td class="r data">     $96,190</td>
+<td class="r data">    $208,944</td>
+<td class="r data">     0.46</td>
+<td class="r data">      100</td>
+<td class="r data">     1567</td>
+</tr>
+<tr>
+<td class="l data">University of Southern California *</td>
+<td class="l data">Private</td>
+<td class="r data">    20582</td>
+<td class="r data">     $99,600</td>
+<td class="r data">    $217,036</td>
+<td class="r data">     0.46</td>
+<td class="r data">      101</td>
+<td class="r data">     1573</td>
+</tr>
+<tr>
+<td class="l data">FIDM-Fashion Institute of Design &amp; Merchandising-Los Angeles</td>
+<td class="l data">Private</td>
+<td class="r data">     3415</td>
+<td class="r data">     $58,945</td>
+<td class="r data">    $129,172</td>
+<td class="r data">     0.46</td>
+<td class="r data">      102</td>
+<td class="r data">     1580</td>
+</tr>
+<tr>
+<td class="l data">Santa Clara University</td>
+<td class="l data">Private</td>
+<td class="r data">     5754</td>
+<td class="r data">     $90,960</td>
+<td class="r data">    $199,432</td>
+<td class="r data">     0.46</td>
+<td class="r data">      103</td>
+<td class="r data">     1581</td>
+</tr>
+<tr>
+<td class="l data">Saint Mary&#39;s College of California</td>
+<td class="l data">Private</td>
+<td class="r data">     3018</td>
+<td class="r data">     $82,927</td>
+<td class="r data">    $182,744</td>
+<td class="r data">     0.45</td>
+<td class="r data">      104</td>
+<td class="r data">     1587</td>
+</tr>
+<tr>
+<td class="l data">Loyola Marymount University</td>
+<td class="l data">Private</td>
+<td class="r data">     6591</td>
+<td class="r data">     $82,624</td>
+<td class="r data">    $184,544</td>
+<td class="r data">     0.45</td>
+<td class="r data">      105</td>
+<td class="r data">     1606</td>
+</tr>
+<tr>
+<td class="l data">Westmont College</td>
+<td class="l data">Private</td>
+<td class="r data">     1356</td>
+<td class="r data">     $77,735</td>
+<td class="r data">    $176,176</td>
+<td class="r data">     0.44</td>
+<td class="r data">      106</td>
+<td class="r data">     1620</td>
+</tr>
+<tr>
+<td class="l data">Hussian College-Relativity Campus California</td>
+<td class="l data">Private</td>
+<td class="r data">      146</td>
+<td class="r data">     $69,746</td>
+<td class="r data">    $160,400</td>
+<td class="r data">     0.43</td>
+<td class="r data">      107</td>
+<td class="r data">     1630</td>
+</tr>
+<tr>
+<td class="l data">Dominican University of California</td>
+<td class="l data">Private</td>
+<td class="r data">     1459</td>
+<td class="r data">     $76,431</td>
+<td class="r data">    $178,760</td>
+<td class="r data">     0.43</td>
+<td class="r data">      108</td>
+<td class="r data">     1635</td>
+</tr>
+<tr>
+<td class="l data">University of Redlands</td>
+<td class="l data">Private</td>
+<td class="r data">     3556</td>
+<td class="r data">     $81,692</td>
+<td class="r data">    $192,288</td>
+<td class="r data">     0.42</td>
+<td class="r data">      109</td>
+<td class="r data">     1640</td>
+</tr>
+<tr>
+<td class="l data">California Institute of the Arts</td>
+<td class="l data">Private</td>
+<td class="r data">      991</td>
+<td class="r data">     $80,196</td>
+<td class="r data">    $189,784</td>
+<td class="r data">     0.42</td>
+<td class="r data">      110</td>
+<td class="r data">     1643</td>
+</tr>
+<tr>
+<td class="l data">San Francisco Art Institute</td>
+<td class="l data">Private</td>
+<td class="r data">      432</td>
+<td class="r data">     $75,068</td>
+<td class="r data">    $179,112</td>
+<td class="r data">     0.42</td>
+<td class="r data">      111</td>
+<td class="r data">     1649</td>
+</tr>
+<tr>
+<td class="l data">Otis College of Art and Design</td>
+<td class="l data">Private</td>
+<td class="r data">     1101</td>
+<td class="r data">     $76,201</td>
+<td class="r data">    $182,480</td>
+<td class="r data">     0.42</td>
+<td class="r data">      112</td>
+<td class="r data">     1654</td>
+</tr>
+<tr>
+<td class="l data">California College of the Arts</td>
+<td class="l data">Private</td>
+<td class="r data">     1754</td>
+<td class="r data">     $77,164</td>
+<td class="r data">    $189,064</td>
+<td class="r data">     0.41</td>
+<td class="r data">      113</td>
+<td class="r data">     1665</td>
+</tr>
+<tr>
+<td class="l data">Chapman University</td>
+<td class="l data">Private</td>
+<td class="r data">     6756</td>
+<td class="r data">     $81,182</td>
+<td class="r data">    $202,376</td>
+<td class="r data">      0.4</td>
+<td class="r data">      114</td>
+<td class="r data">     1675</td>
+</tr>
+<tr>
+<td class="l data">Mount Saint Mary&#39;s University</td>
+<td class="l data">Private</td>
+<td class="r data">     3100</td>
+<td class="r data">     $62,381</td>
+<td class="r data">    $158,432</td>
+<td class="r data">     0.39</td>
+<td class="r data">      115</td>
+<td class="r data">     1682</td>
+</tr>
+<tr>
+<td class="l data">Mills College</td>
+<td class="l data">Private</td>
+<td class="r data">      869</td>
+<td class="r data">     $62,887</td>
+<td class="r data">    $184,944</td>
+<td class="r data">     0.34</td>
+<td class="r data">      116</td>
+<td class="r data">     1707</td>
+</tr>
+<tr>
+<td class="l data">Scripps College</td>
+<td class="l data">Private</td>
+<td class="r data">     1092</td>
+<td class="r data">     $69,364</td>
+<td class="r data">    $211,864</td>
+<td class="r data">     0.33</td>
+<td class="r data">      117</td>
+<td class="r data">     1710</td>
+</tr>
+<tr>
+<td class="c linecontent" colspan="8">*&nbsp;An&nbsp;Instition&nbsp;that&#39;s&nbsp;Ten&nbsp;Year&nbsp;Median&nbsp;Salary&nbsp;was&nbsp;collected&nbsp;from&nbsp;a&nbsp;WSJ&nbsp;Study<br><a href='../OutStateMap.html'>Back to Out of State Map</a><br><a href='../ValueType.html'>Back to Main Page</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
